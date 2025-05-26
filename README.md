@@ -37,6 +37,17 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 
 ## 🚀 Major Projects
 
+
+### 🧑‍💻 CodeCollab: Real-time Collaborative Coding
+
+**Stack:** Next.js, FastAPI, WebRTC, LangChain, WebSockets
+
+- AI-powered code suggestions and real-time collaboration
+- Secure code rooms with voice support via WebRTC
+- Integrated chat for seamless team interaction
+- Auto code debugger for instant error insights and fixes
+- Intelligent code improvement recommendations using LLMs
+
 ### 🔄 SwapStay: Student Room Exchange System
 
 **Stack:** MERN, Socket.IO, Stripe, JWT, Firebase
@@ -47,14 +58,7 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 - Chat and notification system
 - Stripe-based payment
 
-### 👫 ClubMate: Campus Connect
-
-**Stack:** MERN, WebSockets
-
-- Role-based access control
-- Centralized event management
-- Automated recruitment system
-
+  
 ### 🍽️ DineSmart: Smart Restaurant Platform
 
 **Stack:** React, Firebase, Express, MongoDB
