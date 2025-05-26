@@ -31,7 +31,7 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 
 ### 🤖 GenAI & Modern Tools
 
-- LangChain, Pinecone, FastAPI, RAG (Retrieval Augmented Generation)
+- LangChain, Pinecone, FastAPI, RAG (Retrieval Augmented Generation), WebRTC, WebSockets
 
 ---
 
