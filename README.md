@@ -14,10 +14,12 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 
 - C, C++
 - JavaScript
+- Python
 
 ### 🤩 Frontend Technologies
 
 - React.js
+- Nextjs
 - Tailwind CSS
 - HTML5, CSS3
 
