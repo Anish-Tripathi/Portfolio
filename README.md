@@ -1,57 +1,104 @@
 # Anish Tripathi - Portfolio
 
-<a href="https://portfolio-sandy-nine-48.vercel.app/" target="_blank">![Portfolio Screenshot](./assets/portfolio-screenshot.png)</a>
+## 👋 About Me
 
-## 👨‍💻 About Me
-
-I'm a passionate **Full-Stack Developer** and **Competitive Programmer** currently pursuing BTech in Electronics and Communication Engineering with minors in Computer Science at NITK. I specialize in building robust web applications with modern technologies and solving complex algorithmic challenges.
+I'm a passionate **Full-Stack Developer** and **Competitive Programmer** currently pursuing BTech in Electronics and Communication Engineering with a minor in Computer Science at NITK. I specialize in building robust web applications and solving complex algorithmic challenges.
 
 🔹 **Tech Enthusiast** | 🔹 **Problem Solver** | 🔹 **Open Source Contributor**
 
-## 🛠 Technical Skills
+---
 
-**Languages:**  
-![C](https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat&logo=c%2B%2B&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+## 🧠 Skills
 
-**Frontend:**  
-![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+### 👨‍💻 Programming Languages
 
-**Backend:**  
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white)
+- C, C++
+- JavaScript
 
-## 🚀 Featured Projects
+### 🤩 Frontend Technologies
 
-### SwapStay: Room Exchange System
-**Tech Stack:** MERN, Socket.IO, Stripe  
-✔ Secure JWT authentication  
-✔ Real-time chat system  
-✔ Advanced search filters  
-✔ Stripe payment integration  
+- React.js
+- Tailwind CSS
+- HTML5, CSS3
 
-[View Project](#) | [GitHub Repo](#)
+### 🔧 Backend Technologies
 
-### DeliverEase: Logistics Delivery System  
-**Tech Stack:** JavaScript, Graph Algorithms  
-✔ 30% cost reduction with dynamic pricing  
-✔ 40% faster route optimization  
-✔ Real-time tracking with OpenStreetMap  
+- Node.js
+- Express.js
+- MongoDB, SQL, Firebase, Supabase
 
-[View Project](#) | [GitHub Repo](#)
+### 🤖 GenAI & Modern Tools
 
-### ClubMate: Campus Connect  
-**Tech Stack:** MERN, WebSockets  
-✔ Role-based access control  
-✔ Centralized event management  
-✔ Automated recruitment system  
+- LangChain, Pinecone, FastAPI, RAG (Retrieval Augmented Generation)
 
-[View More Projects →](https://portfolio-sandy-nine-48.vercel.app/projects)
+---
+
+## 🚀 Major Projects
+
+### 🔄 SwapStay: Student Room Exchange System
+
+**Stack:** MERN, Socket.IO, Stripe, JWT, Firebase
+
+- Role-based access and OTP activation
+- Real-time room swap requests
+- Mess and guest house booking
+- Chat and notification system
+- Stripe-based payment
+
+### 👫 ClubMate: Campus Connect
+
+**Stack:** MERN, WebSockets
+
+- Role-based access control
+- Centralized event management
+- Automated recruitment system
+
+### 🍽️ DineSmart: Smart Restaurant Platform
+
+**Stack:** React, Firebase, Express, MongoDB
+
+- Role-based dashboard for Admin, User & Restaurant
+- Real-time order tracking and table booking
+- Google OAuth, OTP Auth
+- Secure payments, smart filters, nutritional info
+
+---
+
+## 🖼️ Portfolio Snapshots
+
+### 🏠 Home Page
+
+### 🏠 Home
+
+<img src="./assets/home.png" alt="Home Page" width="70%" style="height: 250px; object-fit: cover; border-radius: 8px;" />
+
+<p align="center"><i>Welcome to the landing page – your journey starts here!</i></p>
+
+---
+
+### 🙋 About Me
+
+<img src="./assets/about.png" alt="About Me" width="70%" style="height: 250px; object-fit: cover; border-radius: 8px;" />
+
+<p align="center"><i>Get to know me, my journey, and my passions.</i></p>
+
+---
+
+### 🎓 Academic Details
+
+<img src="./assets/projects.png" alt="Academic Details" width="70%" style="height: 250px; object-fit: cover; border-radius: 8px;" />
+
+<p align="center"><i>Explore my academic background and coursework.</i></p>
+
+---
+
+### 🚀 Projects
+
+<img src="./assets/featured.png" alt="Projects" width="70%" style="height: 250px; object-fit: cover; border-radius: 8px;" />
+
+<p align="center"><i>Dive into some of my most impactful creations!</i></p>
+
+---
 
 ## 🏆 Achievements
 
@@ -59,14 +106,16 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 - **Treasurer at IET NITK** managing ₹1.5L+ budget
 - Organized **RoboWar** with 100+ participants
 - Conducted **8+ technical workshops** for juniors
-- **Leetcode** enthusiast (Check my profile [here](https://leetcode.com/u/AnishTripathi/))
+- **Leetcode** enthusiast ([Profile](https://leetcode.com/u/AnishTripathi/))
 
-## 📞 Let's Connect
+---
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anish-t-223238270/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black)](https://leetcode.com/u/AnishTripathi/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://portfolio-sandy-nine-48.vercel.app/)
+## 🔗 Let's Connect
+
+- [LinkedIn](https://www.linkedin.com/in/anish-t-223238270/)
+- [GitHub](https://github.com/yourusername)
+- [LeetCode](https://leetcode.com/u/AnishTripathi/)
+- [Portfolio](https://portfolio-sandy-nine-48.vercel.app/)
 
 📧 **Email:** tripathiarun780@gmail.com  
-📱 **Phone:** +91 9867469877
+📞 **Phone:** +91 9867469877
