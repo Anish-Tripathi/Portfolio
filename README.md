@@ -6,6 +6,8 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 
 🔹 **Tech Enthusiast** | 🔹 **Problem Solver** | 🔹 **Open Source Contributor**
 
+🎯 [**Explore My Portfolio**](https://portfolio-sandy-nine-48.vercel.app/) – Dive into my projects, skills, and achievements!
+
 ---
 
 ## 🧠 Skills
@@ -70,11 +72,12 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 
 ---
 
+💡 Want to see more? **[Explore my other projects here](https://portfolio-sandy-nine-48.vercel.app/projects)** – from real-time apps to AI integrations!
+
+
 ## 🖼️ Portfolio Snapshots
 
 ### 🏠 Home Page
-
-### 🏠 Home
 
 <img src="./assets/home.png" alt="Home Page" width="70%" style="height: 250px; object-fit: cover; border-radius: 8px;" />
 
@@ -121,7 +124,6 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 - [LinkedIn](https://www.linkedin.com/in/anish-t-223238270/)
 - [GitHub](https://github.com/yourusername)
 - [LeetCode](https://leetcode.com/u/AnishTripathi/)
-- [Portfolio](https://portfolio-sandy-nine-48.vercel.app/)
 
 📧 **Email:** tripathiarun780@gmail.com  
 📞 **Phone:** +91 9867469877
