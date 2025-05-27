@@ -8,6 +8,9 @@ import {
   Zap,
   Trophy,
   Star,
+  Globe,
+  BookOpen,
+  Heart,
 } from "lucide-react";
 
 function Club() {
@@ -80,7 +83,7 @@ function Club() {
           </motion.div>
 
           {/* Timeline of Involvement */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Column 1: Roles */}
             <motion.div
               className="col-span-1"
@@ -102,12 +105,27 @@ function Club() {
 
                 <div className="space-y-4">
                   <motion.div
+                    className="bg-gradient-to-r from-zinc-900 to-zinc-800 p-5 rounded-lg border-l-4 border-purple-500"
+                    whileHover={{ x: 5 }}
+                  >
+                    <h4 className="text-lg font-semibold mb-2 text-white flex items-center">
+                      <Cpu className="w-4 h-4 mr-2 text-purple-400" />
+                      Technical Head (Current)
+                    </h4>
+                    <p className="text-gray-300">
+                      Leading technical initiatives and mentoring teams in
+                      innovative projects, overseeing technical execution of
+                      club events and workshops.
+                    </p>
+                  </motion.div>
+
+                  <motion.div
                     className="bg-gradient-to-r from-zinc-900 to-zinc-800 p-5 rounded-lg border-l-4 border-blue-500"
                     whileHover={{ x: 5 }}
                   >
                     <h4 className="text-lg font-semibold mb-2 text-white flex items-center">
                       <Star className="w-4 h-4 mr-2 text-yellow-400" />
-                      Treasurer (Current)
+                      Treasurer
                     </h4>
                     <p className="text-gray-300">
                       Managing financial operations and event budgeting for IET,
@@ -273,6 +291,89 @@ function Club() {
               </div>
             </motion.div>
           </div>
+
+          {/* Other Campus Contributions - Separate Section */}
+          <motion.div
+            className="bg-gradient-to-br from-zinc-900/50 to-black/80 p-8 rounded-xl shadow-2xl border border-zinc-700 backdrop-blur-sm"
+            variants={fadeInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <div className="flex items-center mb-8">
+              <div className="bg-gradient-to-r from-purple-600 to-pink-600 p-3 rounded-lg mr-4">
+                <Globe className="w-6 h-6 text-white" />
+              </div>
+              <h2 className="text-3xl font-bold text-white">
+                Other Campus Contributions
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <motion.div
+                className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 p-6 rounded-lg border border-purple-500/30"
+                whileHover={{ y: -3, scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
+                <div className="flex items-center mb-4">
+                  <BookOpen className="w-5 h-5 mr-3 text-purple-400" />
+                  <h3 className="text-xl font-semibold text-white">
+                    Media Coordinator
+                  </h3>
+                </div>
+                <p className="text-gray-300 leading-relaxed">
+                  Served as Media Coordinator for{" "}
+                  <span className="text-purple-400 font-medium">Incident</span>{" "}
+                  and{" "}
+                  <span className="text-pink-400 font-medium">Engineer</span>{" "}
+                  magazines, enhancing campus outreach and engaging the student
+                  community through strategic content distribution and social
+                  media management.
+                </p>
+              </motion.div>
+
+              <motion.div
+                className="bg-gradient-to-br from-green-900/30 to-teal-900/30 p-6 rounded-lg border border-green-500/30"
+                whileHover={{ y: -3, scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
+                <div className="flex items-center mb-4">
+                  <Code className="w-5 h-5 mr-3 text-green-400" />
+                  <h3 className="text-xl font-semibold text-white">
+                    Web Development
+                  </h3>
+                </div>
+                <p className="text-gray-300 leading-relaxed">
+                  Developed comprehensive websites for{" "}
+                  <span className="text-green-400 font-medium">SMILE</span> and{" "}
+                  <span className="text-teal-400 font-medium">Yoga Club</span>,
+                  implementing modern design principles and user-friendly
+                  interfaces that increased online engagement by{" "}
+                  <span className="text-yellow-400 font-bold">50%</span>.
+                </p>
+              </motion.div>
+            </div>
+
+            <motion.div
+              className="mt-6 bg-gradient-to-r from-indigo-900/30 to-purple-900/30 p-6 rounded-lg border border-indigo-500/30"
+              whileHover={{ scale: 1.01 }}
+              transition={{ duration: 0.2 }}
+            >
+              <div className="flex items-center mb-4">
+                <Heart className="w-5 h-5 mr-3 text-indigo-400" />
+                <h3 className="text-xl font-semibold text-white">
+                  Community Impact
+                </h3>
+              </div>
+              <p className="text-gray-300 leading-relaxed">
+                Through these diverse roles across different campus
+                organizations, I've contributed to building a more connected and
+                digitally-enabled campus community, bridging the gap between
+                technology and student engagement.
+              </p>
+            </motion.div>
+          </motion.div>
         </div>
       </motion.section>
     </div>

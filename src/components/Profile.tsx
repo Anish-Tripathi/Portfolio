@@ -2,8 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Typed from "typed.js";
 import { Download, Code2 } from "lucide-react";
-import { FaLongArrowAltRight, FaGithub, FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Lottie from "lottie-react";
 
 function Hero() {
@@ -285,28 +284,6 @@ function Hero() {
             </motion.div>
           </motion.div>
         </div>
-      </motion.div>
-
-      {/* Check out my profile section */}
-      <motion.div
-        className="text-center py-12 relative z-10"
-        initial={{ y: 50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ delay: 1.4, duration: 0.8 }}
-      >
-        <Link
-          to="/projects"
-          onClick={() => window.scrollTo(0, 0)}
-          className="group text-white text-2xl md:text-3xl font-bold inline-flex items-center gap-4 hover:text-blue-400 transition-all duration-300"
-        >
-          <span>Check out my work</span>
-          <motion.div
-            whileHover={{ x: 10 }}
-            transition={{ type: "spring", stiffness: 400 }}
-          >
-            <FaLongArrowAltRight className="text-3xl md:text-4xl group-hover:text-blue-400" />
-          </motion.div>
-        </Link>
       </motion.div>
 
       {/* Add keyframes for floating particles */}

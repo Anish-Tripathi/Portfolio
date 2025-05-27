@@ -94,7 +94,7 @@ const Navbar = () => {
         {/* Social Links */}
         <div className="ml-4hidden md:flex items-center gap-3">
           <motion.a
-            href="https://www.linkedin.com/feed/"
+            href="https://www.linkedin.com/in/anish-t-223238270/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white/80 hover:text-white p-2 bg-white/5 rounded-full hover:bg-white/10 transition-all duration-300"
