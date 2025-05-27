@@ -208,27 +208,27 @@ function About() {
     },
     {
       title: "Cyber Security & Privacy Certification",
-      issuer: "CyberSec Institute",
+      issuer: "NPTEL- IIT Madras",
       description:
         "Comprehensive training in system security, data protection, and privacy compliance. Developed skills in threat assessment and vulnerability management.",
       image: "/cyber.png",
       highlight: "Silver Medal | Top 2%",
     },
     {
-      title: "React and Redux Certification",
-      issuer: "Complete Coding",
+      title: "Fundamentals of Object Oriented Programming",
+      issuer: "NPTEL - IIT Roorkee",
       description:
-        "Advanced training in building scalable React applications with complex state management using Redux, modern hooks patterns, and performant rendering techniques.",
-      image: "/reactRedux.png",
-      highlight: "Outstanding Project Award",
+        "Earned a silver medal for outstanding performance in the NPTEL course covering core OOP concepts such as inheritance, polymorphism, encapsulation, and abstraction in Java and C++.",
+      image: "/oop-nptel.png",
+      highlight: "Silver Medal",
     },
     {
-      title: "JavaScript Mastery Certification",
-      issuer: "Complete Coding",
+      title: "Graph Camp Achiever",
+      issuer: "AlgoUniversity",
       description:
-        "In-depth JavaScript training covering ES6+, asynchronous programming, functional patterns, and performance optimization for modern web applications.",
-      image: "/javascript.png",
-      highlight: "Excellence in Implementation",
+        "Completed an intensive graph algorithms bootcamp covering BFS, DFS, Dijkstra, Kruskal, Prim’s, and advanced graph theory concepts with problem-solving using C++ and Python.",
+      image: "/algouniversity-graph.png",
+      highlight: "Achiever",
     },
   ];
 

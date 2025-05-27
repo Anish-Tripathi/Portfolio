@@ -30,7 +30,7 @@ const Navbar = () => {
     "Academic",
     "Projects",
     // "Career",
-    "Services",
+    // "Services",
     "Contact",
   ];
 
@@ -69,7 +69,7 @@ const Navbar = () => {
               key={item}
               to={`/${item.toLowerCase()}`}
               className={({}) =>
-                `text-white relative px-2 py-1 overflow-hidden group transition-colors`
+                `text-white relative text-md px-2 py-1 overflow-hidden group transition-colors`
               }
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >

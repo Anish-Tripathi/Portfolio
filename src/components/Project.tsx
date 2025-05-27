@@ -52,13 +52,13 @@ function Project() {
         viewport={{ once: true }}
       >
         <div className="max-w-6xl mx-auto px-4">
-          {/* Frontend Projects Section */}
+          {/* Web Development Projects Section */}
           <motion.div className="mb-24" variants={itemVariants}>
             <div className="flex items-center justify-center mb-16">
               <div className="h-px w-16 bg-gradient-to-r from-transparent to-blue-500"></div>
               <h2 className="text-4xl font-bold text-white mx-4 relative">
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                  Frontend Projects
+                  Web Development Projects
                 </span>
               </h2>
               <div className="h-px w-16 bg-gradient-to-l from-transparent to-purple-500"></div>
@@ -67,9 +67,125 @@ function Project() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
-                  title: "Flashfeed",
+                  title: "CodeCollab",
                   description:
-                    "Advanced news aggregation platform with real-time updates across multiple categories. Features intelligent search functionality, personalized news feeds, and fluid UI transitions for seamless user experience.",
+                    "AI-powered collaborative coding platform with real-time code editing, video/audio chat using WebRTC, and intelligent code assistance via LangChain and Pinecone. Built for pair programming, mock interviews, and team collaboration with a smart developer experience.",
+                  tech: [
+                    "Next.js",
+                    "FastAPI",
+                    "WebRTC",
+                    "WebSockets",
+                    "LangChain",
+                    "Pinecone",
+                    "JWT",
+                    "OAuth2",
+                  ],
+                  link: "https://github.com/Anish-Tripathi/CodeCollab",
+                  demo: "https://example.com/codecollab",
+                  image: "/CodeCollab.png",
+                },
+                {
+                  title: "SwapStay",
+                  description:
+                    "A comprehensive room swapping and guest house booking platform tailored for students. Features role-based access control, OTP-based email activation, real-time chat using WebSockets, and a dedicated mess booking module. Includes Stripe-powered payments, receipt generation, advanced filtering, and multi-theme support for a seamless user experience.",
+                  tech: [
+                    "React",
+                    "Firebase",
+                    "MongoDB",
+                    "Express",
+                    "Node.js",
+                    "JWT",
+                    "WebSockets",
+                    "Stripe API",
+                  ],
+                  link: "https://github.com/Anish-Tripathi/SwapStay",
+                  demo: "https://example.com/swapstay",
+                  image: "/SwapStay.png",
+                },
+                {
+                  title: "DineSmart",
+                  description:
+                    "Full-stack restaurant platform with smart filtering, live order tracking, OTP-based authentication, and secure Google OAuth. Features include role-based access, real-time table availability, Stripe payments, and a seamless customer/restaurant dashboard.",
+                  tech: [
+                    "React",
+                    "Module CSS",
+                    "Express",
+                    "MongoDB",
+                    "Node.js",
+                    "JWT",
+                  ],
+                  link: "https://github.com/Anish-Tripathi/DineSmart",
+                  demo: "https://example.com/dinesmart",
+                  image: "/DineSmart.png",
+                },
+                {
+                  title: "DeliverEase",
+                  description:
+                    "Logistics platform simulating last-mile delivery optimization using Dijkstra’s algorithm. Supports live tracking with OpenStreetMap, responsive UI, dynamic route updates, and user-friendly delivery visualization.",
+                  tech: [
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "OpenStreetMap API",
+                    "Dijkstra Algorithm",
+                    "Bootstrap",
+                    "LocalStorage",
+                  ],
+                  link: "https://github.com/Anish-Tripathi/DeliverEase",
+                  demo: "https://example.com/deliverease",
+                  image: "/deliverEase.png",
+                },
+                {
+                  title: "CodeClarify",
+                  description:
+                    "AI-powered Chrome extension that provides contextual code explanations and summaries. Uses the OpenAI API for code analysis, Prism.js for syntax highlighting, and Tailwind CSS for modern UI. Ideal for learning, reviewing, or debugging unfamiliar code.",
+                  tech: [
+                    "React",
+                    "Chrome Extension",
+                    "OpenAI API",
+                    "Prism.js",
+                    "Tailwind CSS",
+                  ],
+                  link: "https://github.com/Anish-Tripathi/CodeClarify",
+                  demo: "https://example.com/codeclarify",
+                  image: "/CodeClarify.png",
+                },
+                {
+                  title: "SkyCast",
+                  description:
+                    "Interactive weather dashboard with hourly and weekly forecasts, geolocation-based updates, and historical weather trends using Chart.js. Integrates OpenWeatherMap API and radar maps for accurate and visually rich weather insights.",
+                  tech: [
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "Node.js",
+                    "Express",
+                    "OpenWeatherMap API",
+                    "Geolocation API",
+                  ],
+                  link: "https://github.com/Anish-Tripathi/SkyCast",
+                  demo: "https://nebula-weather.vercel.app/",
+                  image: "/weather.png",
+                },
+                {
+                  title: "Calcify",
+                  description:
+                    "Calcify is a sleek, intelligent calculator designed for real-world usability and clarity. It supports everything from basic arithmetic to advanced scientific functions, and goes beyond traditional calculators by providing step-by-step explanations, natural language input, and a responsive, visually refined UI.",
+                  tech: [
+                    "ReactJS",
+                    "Bootstrap",
+                    "Context API",
+                    "Math.js",
+                    "CSS Grid",
+                  ],
+                  link: "https://github.com/Anish-Tripathi/Calcify",
+                  demo: "https://calcify-tau.vercel.app/",
+                  image: "/Calcify.png",
+                },
+                {
+                  title: "FlashFeed",
+                  description:
+                    "FlashFeed is a one-stop portal for real-time, categorized news from trusted sources around the globe. Built using HTML, CSS, and Vanilla JavaScript, FlashFeed pulls the latest headlines using a News API and presents them in a fast, intuitive, and visually appealing interface.",
                   tech: [
                     "HTML5",
                     "CSS3",
@@ -77,12 +193,12 @@ function Project() {
                     "News API",
                     "Responsive Design",
                   ],
-                  link: "https://github.com/Anish-Tripathi",
-                  demo: "https://example.com/flashfeed",
+                  link: "https://github.com/Anish-Tripathi/FlashFeed",
+                  demo: "https://flash-feed-amber.vercel.app/",
                   image: "/flashFeed.png",
                 },
                 {
-                  title: "Tic Tac Toe",
+                  title: "Tic-Tac-Toe",
                   description:
                     "Interactive game with smart winning detection algorithms, animated transitions between moves, and a sleek minimalist design. Features game history tracking and customizable player avatars.",
                   tech: [
@@ -92,54 +208,31 @@ function Project() {
                     "LocalStorage API",
                     "CSS Animations",
                   ],
-                  link: "https://github.com/Anish-Tripathi",
-                  demo: "https://example.com/tictactoe",
+                  link: "https://github.com/Anish-Tripathi/Tic-Tac-Toe",
+                  demo: "https://tic-tac-toe-indol-kappa.vercel.app/",
                   image: "/TicTacToe.png",
-                },
-                {
-                  title: "Calculator",
-                  description:
-                    "Sophisticated calculation tool with support for complex mathematical operations, keyboard shortcuts, and calculation history. Features a theme-switching capability and responsive design for all devices.",
-                  tech: [
-                    "ReactJS",
-                    "Bootstrap",
-                    "Context API",
-                    "Math.js",
-                    "CSS Grid",
-                  ],
-                  link: "https://github.com/Anish-Tripathi",
-                  demo: "https://example.com/calculator",
-                  image: "/Calculator.png",
-                },
-                {
-                  title: "FoodList",
-                  description:
-                    "Intuitive food management application with drag-and-drop reordering, smart categorization, and nutrition tracking. Features elegant animations and persistent storage to maintain state between sessions.",
-                  tech: [
-                    "ReactJS",
-                    "Bootstrap",
-                    "React DnD",
-                    "LocalStorage",
-                    "CSS Transitions",
-                  ],
-                  link: "https://github.com/Anish-Tripathi",
-                  demo: "https://example.com/foodlist",
-                  image: "/FoodList.png",
                 },
                 {
                   title: "ToDoList",
                   description:
-                    "Productivity-focused task manager with priority levels, deadline tracking, and customizable categories. Features dark/light theme switching and subtle micro-interactions for enhanced user engagement.",
-                  tech: [
-                    "ReactJS",
-                    "Bootstrap",
-                    "React Hooks",
-                    "Framer Motion",
-                    "IndexedDB",
-                  ],
-                  link: "https://github.com/Anish-Tripathi",
-                  demo: "https://example.com/todolist",
+                    "A simple task manager built to practice React basics like hooks and state. Allows users to add, delete, and mark tasks as done, with optional dark/light mode and basic styling using Bootstrap.",
+                  tech: ["ReactJS", "Bootstrap", "React Hooks"],
                   image: "/ToDoList.png",
+                },
+                {
+                  title: "Connectify",
+                  description:
+                    "A beginner-friendly social media UI project designed to mimic the core layout and interactions of modern platforms. Includes post cards, user profiles, follow buttons, and a basic responsive feed layout to practice frontend skills.",
+                  tech: ["React", "Bootstrap", "Node.js"],
+                  image: "/Connectify.png",
+                },
+
+                {
+                  title: "FoodList",
+                  description:
+                    "Basic food listing app created to explore state management in React. Lets users add and reorder items with simple animations and persistent state using local storage.",
+                  tech: ["ReactJS", "Bootstrap"],
+                  image: "/FoodList.png",
                 },
               ].map((project, index) => (
                 <motion.div
@@ -153,192 +246,6 @@ function Project() {
                   }}
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
-                  variants={itemVariants}
-                >
-                  <div className="relative overflow-hidden rounded-lg mb-6 group">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-48 object-contain transition-all duration-500 transform group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center">
-                      <div className="p-4 w-full flex justify-center space-x-4 translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
-                        <a
-                          href={project.demo}
-                          className="px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg text-white text-sm font-medium flex items-center gap-2 transition-colors"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <FiExternalLink size={16} />
-                          <span>Live Demo</span>
-                        </a>
-                        <a
-                          href={project.link}
-                          className="px-4 py-2 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-white text-sm font-medium flex items-center gap-2 transition-colors"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <FaSquareGithub size={16} />
-                          <span>Code</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <h3 className="text-xl font-bold mb-3 text-white">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-400 mb-4 text-sm">
-                    {project.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tech.map((tech, i) => (
-                      <span
-                        key={i}
-                        className="px-3 py-1 bg-gradient-to-r from-blue-900/40 to-purple-900/40 rounded-full text-xs text-gray-300 backdrop-blur-sm"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Full-Stack Projects Section */}
-          <motion.div className="mb-24" variants={itemVariants}>
-            <div className="flex items-center justify-center mb-16">
-              <div className="h-px w-16 bg-gradient-to-r from-transparent to-blue-500"></div>
-              <h2 className="text-4xl font-bold text-white mx-4 relative">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-                  Full-Stack Projects
-                </span>
-              </h2>
-              <div className="h-px w-16 bg-gradient-to-l from-transparent to-purple-500"></div>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "DineSmart",
-                  description:
-                    "Complete restaurant management ecosystem with real-time table availability tracking, advanced order customization, and a seamless payment gateway integration. Features detailed analytics for restaurant owners and a loyalty program for customers.",
-                  tech: [
-                    "React",
-                    "Node.js",
-                    "MongoDB",
-                    "Express",
-                    "JWT",
-                    "Redux",
-                    "Socket.io",
-                  ],
-                  link: "https://github.com/Anish-Tripathi",
-                  demo: "https://example.com/dinesmart",
-                  image: "/DineSmart.png",
-                },
-                {
-                  title: "DeliverEase",
-                  description:
-                    "Logistics optimization platform featuring AI-driven route suggestions, predictive delivery timing, and dynamic cost calculations. Integrates with mapping APIs for real-time traffic analysis and automated delivery notifications.",
-                  tech: [
-                    "HTML5",
-                    "CSS3",
-                    "JavaScript",
-                    "Dijkstra Algorithm",
-                    "Bootstrap",
-                    "Google Maps API",
-                    "LocalStorage",
-                  ],
-                  link: "https://github.com/Anish-Tripathi",
-                  demo: "https://example.com/deliverease",
-                  image: "/deliverEase.png",
-                },
-                {
-                  title: "SwapStay",
-                  description:
-                    "Innovative hostel room exchange platform with intuitive matching algorithms, real-time notifications, and secure authentication. Features interactive room maps and a reputation system for trustworthy exchanges.",
-                  tech: [
-                    "HTML5",
-                    "CSS3",
-                    "JavaScript",
-                    "Node.js",
-                    "Express",
-                    "RESTful API",
-                    "SQL",
-                    "JWT",
-                    "WebSockets",
-                  ],
-                  link: "https://github.com/Anish-Tripathi",
-                  demo: "https://example.com/swapstay",
-                  image: "/SwapStay.png",
-                },
-                {
-                  title: "LocalConnect",
-                  description:
-                    "Revolutionary marketplace connecting local businesses with influencers through sophisticated matching algorithms and campaign management tools. Features analytics dashboards, secure payment processing, and content performance tracking.",
-                  tech: [
-                    "React",
-                    "Node.js",
-                    "MongoDB",
-                    "Redux",
-                    "Express",
-                    "RESTful API",
-                    "JWT",
-                    "Tailwind CSS",
-                    "Chart.js",
-                  ],
-                  link: "https://github.com/Anish-Tripathi",
-                  demo: "https://example.com/localconnect",
-                  image: "/LocalConnect.png",
-                },
-                {
-                  title: "Weather App",
-                  description:
-                    "Comprehensive weather information system with hourly forecasts, severe weather alerts, and historical data visualization. Features geolocation support and interactive radar maps for precise weather tracking.",
-                  tech: [
-                    "HTML5",
-                    "CSS3",
-                    "JavaScript",
-                    "Node.js",
-                    "Express",
-                    "OpenWeatherMap API",
-                    "Geolocation API",
-                    "Chart.js",
-                  ],
-                  link: "https://github.com/Anish-Tripathi",
-                  demo: "https://example.com/weatherapp",
-                  image: "/weather.png",
-                },
-                {
-                  title: "ReelsCart",
-                  description:
-                    "Next-generation social commerce platform integrating shoppable video content, influencer partnerships, and seamless e-commerce functionality. Features AI-powered content recommendations and engagement analytics for creators.",
-                  tech: [
-                    "React",
-                    "Bootstrap",
-                    "Node.js",
-                    "MongoDB",
-                    "Express",
-                    "API",
-                    "AWS S3",
-                    "Redux",
-                    "Firebase",
-                  ],
-                  link: "https://github.com/Anish-Tripathi/sociogram",
-                  demo: "https://example.com/reelscart",
-                  image: "/Connectify.png",
-                },
-              ].map((project, index) => (
-                <motion.div
-                  key={index}
-                  className="bg-gradient-to-br from-zinc-900 to-black p-6 rounded-xl border border-zinc-800 shadow-lg transform transition duration-300 h-full"
-                  whileHover={{
-                    y: -10,
-                    boxShadow:
-                      "0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-                    borderColor: "rgba(139, 92, 246, 0.3)",
-                  }}
                   variants={itemVariants}
                 >
                   <div className="relative overflow-hidden rounded-lg mb-6 group">
@@ -412,7 +319,7 @@ function Project() {
                     "Award-winning combat robot featuring real-time telemetry, adaptive control systems, and modular weapon attachments. Implemented low-latency communication via MQTT protocol for precise control in high-intensity competitive environments.",
                   tech: [
                     "IoT",
-                    "MQTT Protocol",
+                    "Mosquito Server",
                     "Wireless Control",
                     "Sensor Fusion",
                     "3D Printed Chassis",
@@ -505,6 +412,34 @@ function Project() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
+                {
+                  title: "Optimizing TCP for Content Delivery",
+                  description:
+                    "Research-focused study analyzing how TCP interacts with modern load balancing and caching mechanisms to improve content distribution efficiency. Explores congestion control behaviors, caching strategies, and multi-server architectures through theoretical modeling and practical simulations.",
+                  tech: [
+                    "TCP/IP",
+                    "Load Balancing",
+                    "Caching Techniques",
+                    "Network Simulation",
+                    "Congestion Control",
+                    "Content Delivery Optimization",
+                  ],
+                  link: "https://drive.google.com/file/d/1EoxvMbN7F8MzeXJO4A48T7lnY2bdllQd/view?usp=sharing",
+                },
+                {
+                  title: "4-bit Barrel Shifter Implementation and Analysis",
+                  description:
+                    "Designed and simulated a 4-bit barrel shifter using multiple digital logic styles including transmission gates, multiplexers, and behavioral modeling. Conducted detailed performance analysis in terms of delay, power, and area using Cadence Virtuoso and Spectre simulation tools.",
+                  tech: [
+                    "Cadence Virtuoso",
+                    "Spectre",
+                    "Transmission Gate Logic",
+                    "Multiplexer-Based Design",
+                    "Delay & Power Analysis",
+                    "Digital VLSI Design",
+                  ],
+                  link: "https://drive.google.com/file/d/1rzsZw7hHOV4eksET7rSWD8zta13W7N4N/view?usp=sharing",
+                },
                 {
                   title: "Advanced Smart Room System",
                   description:

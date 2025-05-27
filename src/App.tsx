@@ -11,7 +11,7 @@ import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import Services from "./components/Services";
+// import Services from "./components/Services";
 import { NeonEntry } from "./components/NeonEntry";
 import Career from "./components/Career";
 
@@ -29,7 +29,7 @@ function AppContent() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/academic" element={<Academic />} />
         <Route path="/career" element={<Career />} />
-        <Route path="/services" element={<Services />} />
+        {/* <Route path="/services" element={<Services />} /> */}
         <Route
           path="/"
           element={
