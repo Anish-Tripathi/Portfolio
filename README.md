@@ -6,6 +6,8 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 
 🔹 **Tech Enthusiast** | 🔹 **Problem Solver** | 🔹 **Open Source Contributor**
 
+🎯 [**Explore My Portfolio**](https://portfolio-sandy-nine-48.vercel.app/) – Dive into my projects, skills, and achievements!
+
 ---
 
 ## 🧠 Skills
@@ -14,10 +16,12 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 
 - C, C++
 - JavaScript
+- Python
 
 ### 🤩 Frontend Technologies
 
 - React.js
+- Nextjs
 - Tailwind CSS
 - HTML5, CSS3
 
@@ -29,11 +33,22 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 
 ### 🤖 GenAI & Modern Tools
 
-- LangChain, Pinecone, FastAPI, RAG (Retrieval Augmented Generation)
+- LangChain, Pinecone, FastAPI, RAG (Retrieval Augmented Generation), WebRTC, WebSockets
 
 ---
 
 ## 🚀 Major Projects
+
+
+### 🧑‍💻 CodeCollab: Real-time Collaborative Coding
+
+**Stack:** Next.js, FastAPI, WebRTC, LangChain, WebSockets
+
+- AI-powered code suggestions and real-time collaboration
+- Secure code rooms with voice support via WebRTC
+- Integrated chat for seamless team interaction
+- Auto code debugger for instant error insights and fixes
+- Intelligent code improvement recommendations using LLMs
 
 ### 🔄 SwapStay: Student Room Exchange System
 
@@ -45,14 +60,7 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 - Chat and notification system
 - Stripe-based payment
 
-### 👫 ClubMate: Campus Connect
-
-**Stack:** MERN, WebSockets
-
-- Role-based access control
-- Centralized event management
-- Automated recruitment system
-
+  
 ### 🍽️ DineSmart: Smart Restaurant Platform
 
 **Stack:** React, Firebase, Express, MongoDB
@@ -64,11 +72,12 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 
 ---
 
+💡 Want to see more? **[Explore my other projects here](https://portfolio-sandy-nine-48.vercel.app/projects)** – from real-time apps to AI integrations!
+
+
 ## 🖼️ Portfolio Snapshots
 
 ### 🏠 Home Page
-
-### 🏠 Home
 
 <img src="./assets/home.png" alt="Home Page" width="70%" style="height: 250px; object-fit: cover; border-radius: 8px;" />
 
@@ -115,7 +124,6 @@ I'm a passionate **Full-Stack Developer** and **Competitive Programmer** current
 - [LinkedIn](https://www.linkedin.com/in/anish-t-223238270/)
 - [GitHub](https://github.com/yourusername)
 - [LeetCode](https://leetcode.com/u/AnishTripathi/)
-- [Portfolio](https://portfolio-sandy-nine-48.vercel.app/)
 
 📧 **Email:** tripathiarun780@gmail.com  
 📞 **Phone:** +91 9867469877
