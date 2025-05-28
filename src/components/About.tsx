@@ -25,6 +25,7 @@ import {
   Briefcase,
   Award,
 } from "lucide-react";
+
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
@@ -53,6 +54,10 @@ function About() {
         { name: "C++", icon: <Cpu size={24} className="text-blue-500" /> },
         { name: "C", icon: <Terminal size={24} className="text-blue-400" /> },
         { name: "Python", icon: <Code size={24} className="text-green-500" /> },
+        {
+          name: "TypeScript",
+          icon: <FileCode size={24} className="text-blue-600" />,
+        },
       ],
     },
     {
@@ -101,6 +106,14 @@ function About() {
           name: "JWT/Auth",
           icon: <Key size={24} className="text-yellow-500" />,
         },
+        {
+          name: "OAuth2",
+          icon: <Key size={24} className="text-blue-500" />,
+        },
+        {
+          name: "FastAPI",
+          icon: <Server size={24} className="text-cyan-400" />,
+        },
       ],
     },
     {
@@ -138,6 +151,22 @@ function About() {
           name: "AI APIs",
           icon: <Braces size={24} className="text-emerald-400" />,
         },
+        {
+          name: "LangChain",
+          icon: <Braces size={24} className="text-purple-600" />,
+        },
+        {
+          name: "OpenAI API",
+          icon: <Brain size={24} className="text-cyan-400" />,
+        },
+        {
+          name: "RAG",
+          icon: <Package size={24} className="text-pink-400" />,
+        },
+        {
+          name: "Pinecone",
+          icon: <Database size={24} className="text-indigo-500" />,
+        },
       ],
     },
     {
@@ -159,6 +188,10 @@ function About() {
         {
           name: "Postman",
           icon: <Send size={24} className="text-orange-400" />,
+        },
+        {
+          name: "MySQL Workbench",
+          icon: <Database size={24} className="text-blue-700" />,
         },
       ],
     },
@@ -310,9 +343,9 @@ function About() {
                 Leadership
               </h3>
               <p className="text-gray-400">
-                Currently serving as the Treasurer at IET NITK, managing
-                finances, budget planning, and resource allocation for club
-                initiatives and tech events.
+                Currently serving as the Technical Head at IET NITK, leading
+                technical initiatives, managing project teams, and overseeing
+                the execution of tech events and workshops.
               </p>
             </motion.div>
 
@@ -346,7 +379,7 @@ function About() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {[
             {
-              value: "4+",
+              value: "3+",
               label: "Years Coding",
               icon: <Code className="text-blue-500" size={24} />,
             },
@@ -356,12 +389,12 @@ function About() {
               icon: <Briefcase className="text-blue-500" size={24} />,
             },
             {
-              value: "10+",
+              value: "20+",
               label: "Technologies",
               icon: <Database className="text-blue-500" size={24} />,
             },
             {
-              value: "4",
+              value: "10+",
               label: "Certifications",
               icon: <Award className="text-blue-500" size={24} />,
             },
