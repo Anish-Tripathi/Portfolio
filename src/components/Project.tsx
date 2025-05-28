@@ -30,7 +30,7 @@ function Project() {
 
   return (
     <div
-      className="bg-gradient-to-b from-black via-zinc-900 to-black min-h-screen"
+      className=" min-h-screen"
       style={{ scrollBehavior: "smooth", marginTop: "90px" }}
     >
       {/* Hero Section */}
@@ -562,7 +562,7 @@ function Project() {
 
       {/* Contact CTA Section */}
       <motion.section
-        className="py-16 bg-gradient-to-b from-zinc-900 to-black"
+        className="py-16 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}

@@ -19,7 +19,7 @@ function Academic() {
   return (
     <div style={{ scrollBehavior: "smooth", marginTop: "30px" }}>
       <motion.section
-        className="py-20 bg-gradient-to-b from-black to-gray-900"
+        className="py-20 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}

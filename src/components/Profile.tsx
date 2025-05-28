@@ -52,7 +52,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 px-4 md:px-8 pt-16 overflow-hidden">
+    <div className="min-h-screen  px-4 md:px-8 pt-16 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>

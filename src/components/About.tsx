@@ -266,7 +266,7 @@ function About() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-black to-gray-900 min-h-screen">
+    <div className="min-h-screen">
       {/* Hero Section with Parallax Effect */}
       <motion.section
         className="pt-24 pb-16 relative overflow-hidden"

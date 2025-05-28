@@ -79,10 +79,7 @@ function Contact() {
   };
 
   return (
-    <div
-      className="bg-gradient-to-b from-black via-gray-900 to-black"
-      style={{ marginTop: "50px" }}
-    >
+    <div className="" style={{ marginTop: "50px" }}>
       {/* Hero Section */}
       <motion.div
         className="relative min-h-[40vh] flex items-center justify-center overflow-hidden"
@@ -90,12 +87,6 @@ function Contact() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        {/* Background Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
-        </div>
-
         <div className="container mx-auto px-4 text-center relative z-10">
           <motion.h1
             className="text-5xl md:text-6xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500"

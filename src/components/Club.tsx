@@ -22,7 +22,7 @@ function Club() {
   return (
     <div>
       <motion.section
-        className="py-20 bg-gradient-to-b from-black to-zinc-900"
+        className="py-20 "
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}

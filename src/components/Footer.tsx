@@ -17,7 +17,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-gradient-to-b from-black to-gray-900 overflow-hidden">
+    <footer className="relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
@@ -89,13 +89,14 @@ const Footer = () => {
               {["Home", "About", "Projects", "Academic", "Contact"].map(
                 (link) => (
                   <li key={link}>
-                    <a
-                      href={`#${link.toLowerCase()}`}
+                    <Link
+                      to={`/${link.toLowerCase()}`}
+                      onClick={() => window.scrollTo(0, 0)}
                       className="text-gray-300 hover:text-blue-400 transition-colors duration-200 flex items-center group"
                     >
                       <span className="w-0 group-hover:w-2 h-0.5 bg-blue-400 transition-all duration-200 mr-0 group-hover:mr-2"></span>
                       {link}
-                    </a>
+                    </Link>
                   </li>
                 )
               )}
