@@ -41,8 +41,8 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-black/90 backdrop-blur-md py-2 shadow-lg shadow-blue-500/10"
-          : "bg-black/70 backdrop-blur-sm py-4"
+          ? " backdrop-blur-md py-2 shadow-lg shadow-blue-500/10"
+          : "  py-4"
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">

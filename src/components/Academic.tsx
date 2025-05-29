@@ -99,7 +99,7 @@ function Academic() {
               ].map((exam, index) => (
                 <motion.div
                   key={index}
-                  className="bg-zinc-900/70 p-6 rounded-lg border border-zinc-800 hover:border-zinc-700 transition-all"
+                  className=" p-6 rounded-lg border border-zinc-800 hover:border-zinc-700 transition-all"
                   whileHover={{ scale: 1.03, y: -5 }}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -128,17 +128,17 @@ function Academic() {
               </h3>
 
               <motion.div
-                className="bg-gradient-to-br from-zinc-900 to-zinc-950 p-1 rounded-xl overflow-hidden"
+                className=" p-1 rounded-xl overflow-hidden"
                 whileHover={{ scale: 1.01 }}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <div className="bg-black p-6 rounded-lg flex flex-col items-center gap-6">
+                <div className=" p-6 rounded-lg flex flex-col items-center gap-6">
                   {/* Image on top */}
                   <div className="relative w-full flex justify-center">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-purple-500 blur-sm opacity-50 rounded-lg"></div>
+                    <div className="absolute inset-0   opacity-50 rounded-lg"></div>
                     <img
                       src="/boards.jpg"
                       alt="Academic Achievement"

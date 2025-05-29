@@ -237,7 +237,7 @@ function Project() {
               ].map((project, index) => (
                 <motion.div
                   key={index}
-                  className="bg-gradient-to-br from-zinc-900 to-black p-6 rounded-xl border border-zinc-800 shadow-lg transform transition duration-300 h-full"
+                  className=" p-6 rounded-xl border border-zinc-800 shadow-lg transform transition duration-300 h-full"
                   whileHover={{
                     y: -10,
                     boxShadow:
@@ -347,7 +347,7 @@ function Project() {
               ].map((project, index) => (
                 <motion.div
                   key={index}
-                  className="bg-gradient-to-br from-zinc-900 to-black p-6 rounded-xl border border-zinc-800 shadow-lg transform transition duration-300"
+                  className=" p-6 rounded-xl border border-zinc-800 shadow-lg transform transition duration-300"
                   whileHover={{
                     y: -10,
                     boxShadow:
@@ -513,7 +513,7 @@ function Project() {
               ].map((project, index) => (
                 <motion.div
                   key={index}
-                  className="bg-gradient-to-br from-zinc-900 to-black p-6 rounded-xl border border-zinc-800 shadow-lg transform transition duration-300 h-full"
+                  className=" to-black p-6 rounded-xl border border-zinc-800 shadow-lg transform transition duration-300 h-full"
                   whileHover={{
                     y: -10,
                     boxShadow:

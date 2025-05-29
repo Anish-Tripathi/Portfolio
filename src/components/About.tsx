@@ -197,7 +197,6 @@ function About() {
     },
   ];
 
-  // const tools = [
   //   { name: "React", image: "/react.png" },
   //   { name: "Node.js", image: "/nodejs.png" },
   //   { name: "MongoDB", image: "/mongodb.png" },
@@ -317,9 +316,9 @@ function About() {
           >
             <motion.div
               variants={itemVariants}
-              className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-1"
+              className=" border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-1"
             >
-              <div className="bg-blue-500/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <div className=" w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Code2 className="text-blue-500" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">
@@ -334,9 +333,9 @@ function About() {
 
             <motion.div
               variants={itemVariants}
-              className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-1"
+              className=" border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-1"
             >
-              <div className="bg-blue-500/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <div className=" w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <Trophy className="text-blue-500" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">
@@ -351,9 +350,9 @@ function About() {
 
             <motion.div
               variants={itemVariants}
-              className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-1"
+              className=" border border-gray-800 rounded-xl p-6 hover:border-blue-500 transition-all duration-300 transform hover:-translate-y-1"
             >
-              <div className="bg-blue-500/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+              <div className=" w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <GraduationCap className="text-blue-500" size={24} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-white">
@@ -406,7 +405,7 @@ function About() {
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.5 }}
               whileHover={{ scale: 1.05, rotate: 1 }}
-              className="bg-gradient-to-br from-gray-900 to-blue-950/40 rounded-xl p-6 border border-gray-800 shadow-lg flex flex-col items-center"
+              className="rounded-2xl p-6 border border-gray-800 shadow-lg flex flex-col items-center"
             >
               <div className="mb-3">{stat.icon}</div>
               <motion.p
@@ -424,8 +423,7 @@ function About() {
         </div>
       </motion.div>
 
-      {/* Skills Section with Card-based Layout and Animations */}
-      <section className="py-20 bg-gradient-to-b from-black via-black/80 to-black">
+      <section className="py-20 ">
         <div className="max-w-6xl mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -453,7 +451,7 @@ function About() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
                 whileHover={{ scale: 1.03, translateY: -5 }}
-                className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl overflow-hidden border border-gray-700 shadow-xl group"
+                className=" rounded-xl overflow-hidden border border-gray-700/30 shadow-xl group"
               >
                 <div className="p-6">
                   <div className="flex items-center mb-5">
@@ -475,14 +473,93 @@ function About() {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
-                        transition={{ delay: skillIdx * 0.05 + idx * 0.1 }}
-                        whileHover={{ scale: 1.1 }}
-                        className="flex flex-col items-center justify-center bg-gray-800/50 rounded-lg p-3 border border-gray-700 group-hover:border-blue-500/30 transition-all duration-300"
+                        whileHover={{
+                          scale: 1.1,
+                          rotateX: [0, 5, -5, 0],
+                          rotateY: [0, 360],
+                        }}
+                        animate={{
+                          rotateY: [0, 2, -2, 0],
+                          rotateX: [0, 1, -1, 0],
+                        }}
+                        transition={{
+                          delay: skillIdx * 0.05 + idx * 0.1,
+                          rotateY: {
+                            duration: 8 + Math.random() * 4,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                          },
+                          rotateX: {
+                            duration: 6 + Math.random() * 3,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                          },
+                          default: { duration: 0.3 }, // Add default transition for other properties
+                        }}
+                        className="flex flex-col items-center justify-center rounded-full aspect-square p-4 group-hover:border-blue-500/50 transition-all duration-300 shadow-lg relative overflow-hidden cursor-pointer"
+                        style={{
+                          boxShadow: `
+            0 8px 32px rgba(0, 0, 0, 0.6),
+            0 4px 16px rgba(59, 130, 246, 0.2),
+            inset -8px -8px 16px rgba(0, 0, 0, 0.4),
+            inset 8px 8px 16px rgba(255, 255, 255, 0.08),
+            inset 2px 2px 8px rgba(255, 255, 255, 0.15)
+          `,
+                          transform: "perspective(300px)",
+                          transformStyle: "preserve-3d",
+                          border: "1px solid rgba(59, 130, 246, 0.2)",
+                        }}
                       >
-                        <div className="mb-2 flex items-center justify-center">
+                        {/* Main sphere highlight - top left */}
+                        <div className="absolute inset-0 rounded-full opacity-60" />
+
+                        {/* Secondary highlight for depth */}
+                        <div
+                          className="absolute inset-0 rounded-full opacity-30"
+                          style={{
+                            background: `
+              radial-gradient(ellipse 20% 15% at 65% 75%, 
+              rgba(59, 130, 246, 0.6), 
+              transparent 50%)
+            `,
+                          }}
+                        />
+
+                        {/* Subtle rim lighting */}
+                        <div
+                          className="absolute inset-0 rounded-full opacity-40"
+                          style={{
+                            background: `
+              conic-gradient(from 0deg at 50% 50%, 
+              transparent 0deg, 
+              rgba(147, 51, 234, 0.3) 45deg, 
+              rgba(59, 130, 246, 0.4) 90deg,
+              transparent 135deg,
+              rgba(147, 51, 234, 0.2) 225deg,
+              transparent 270deg)
+            `,
+                            mask: `
+              radial-gradient(circle at center, 
+              transparent 70%, 
+              black 80%, 
+              black 90%, 
+              transparent 100%)
+            `,
+                          }}
+                        />
+
+                        <motion.div
+                          className="mb-2 flex items-center justify-center relative z-10"
+                          animate={{ rotateZ: [0, 1, -1, 0] }}
+                          transition={{
+                            duration: 4 + Math.random() * 2,
+                            repeat: Infinity,
+                            ease: "easeInOut",
+                          }}
+                        >
                           {skill.icon}
-                        </div>
-                        <span className="text-gray-300 text-sm font-medium text-center">
+                        </motion.div>
+                        <span className="text-gray-200 text-xs font-medium text-center leading-tight relative z-10 drop-shadow-sm">
                           {skill.name}
                         </span>
                       </motion.div>
@@ -506,8 +583,11 @@ function About() {
             </h3>
             <div className="grid md:grid-cols-2 gap-8">
               <motion.div
-                className="bg-gradient-to-br from-gray-900 to-blue-950/20 rounded-xl p-6 border border-gray-800 shadow-xl"
+                className=" rounded-xl p-6 border border-gray-700/30 shadow-md"
                 whileHover={{ scale: 1.02 }}
+                style={{
+                  background: `radial-gradient(ellipse at top, rgba(59, 130, 246, 0.1), transparent 50%)`,
+                }}
               >
                 <h4 className="text-xl font-bold flex items-center mb-5 text-white">
                   <BookOpen className="mr-3 text-blue-500" size={22} /> Relevant
@@ -528,12 +608,27 @@ function About() {
                       initial={{ opacity: 0, scale: 0.8 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
-                      transition={{ delay: idx * 0.05, duration: 0.3 }}
+                      transition={{
+                        delay: idx * 0.05,
+                        duration: 0.3,
+                        boxShadow: {
+                          duration: 3,
+                          repeat: Infinity,
+                          ease: "easeInOut",
+                        },
+                      }}
                       whileHover={{
                         scale: 1.05,
                         backgroundColor: "rgba(59, 130, 246, 0.3)",
                       }}
-                      className="bg-blue-500/10 text-blue-300 text-sm py-1.5 px-3 rounded-full border border-blue-500/20"
+                      animate={{
+                        boxShadow: [
+                          "0 0 5px rgba(59, 130, 246, 0.3)",
+                          "0 0 15px rgba(59, 130, 246, 0.5)",
+                          "0 0 5px rgba(59, 130, 246, 0.3)",
+                        ],
+                      }}
+                      className=" text-blue-300 text-sm py-1.5 px-3 rounded-full border border-blue-500/30"
                     >
                       {course}
                     </motion.span>
@@ -541,8 +636,11 @@ function About() {
                 </div>
               </motion.div>
               <motion.div
-                className="bg-gradient-to-br from-gray-900 to-blue-950/20 rounded-xl p-6 border border-gray-800 shadow-xl"
+                className=" rounded-xl p-6 border border-gray-700/30 shadow-xl"
                 whileHover={{ scale: 1.02 }}
+                style={{
+                  background: `radial-gradient(ellipse at top, rgba(59, 130, 246, 0.1), transparent 50%)`,
+                }}
               >
                 <h4 className="text-xl font-bold flex items-center mb-5 text-white">
                   <Wrench className="mr-3 text-blue-500" size={22} />{" "}
@@ -567,12 +665,27 @@ function About() {
                       initial={{ opacity: 0, scale: 0.8 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
-                      transition={{ delay: idx * 0.05, duration: 0.3 }}
+                      transition={{
+                        delay: idx * 0.05,
+                        duration: 0.3,
+                        boxShadow: {
+                          duration: 3,
+                          repeat: Infinity,
+                          ease: "easeInOut",
+                        },
+                      }}
                       whileHover={{
                         scale: 1.05,
                         backgroundColor: "rgba(59, 130, 246, 0.3)",
                       }}
-                      className="bg-blue-500/10 text-blue-300 text-sm py-1.5 px-3 rounded-full border border-blue-500/20"
+                      animate={{
+                        boxShadow: [
+                          "0 0 5px rgba(59, 130, 246, 0.3)",
+                          "0 0 15px rgba(59, 130, 246, 0.5)",
+                          "0 0 5px rgba(59, 130, 246, 0.3)",
+                        ],
+                      }}
+                      className=" text-blue-300 text-sm py-1.5 px-3 rounded-full border border-blue-500/30"
                     >
                       {tool}
                     </motion.span>
@@ -585,7 +698,7 @@ function About() {
       </section>
 
       {/* Certifications Section */}
-      <section className="py-16 bg-gradient-to-t from-black to-gray-900">
+      <section className="py-16">
         <div className="max-w-5xl mx-auto px-4">
           <motion.h2
             className="text-4xl font-bold mb-12 text-center text-white"
@@ -608,7 +721,7 @@ function About() {
               <motion.div
                 key={idx}
                 variants={itemVariants}
-                className="bg-gray-900/40 rounded-xl overflow-hidden border border-gray-800 hover:border-blue-500 transition-all duration-300 flex flex-col h-full"
+                className=" rounded-xl overflow-hidden border border-gray-800 hover:border-blue-500 transition-all duration-300 flex flex-col h-full"
               >
                 <div className="relative">
                   <img
@@ -639,14 +752,14 @@ function About() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-16 bg-black">
+      <section className="py-16 ">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="bg-gradient-to-r from-blue-600 to-blue-400 rounded-2xl p-10"
+            className=" rounded-2xl p-10"
           >
             <h2 className="text-3xl font-bold mb-4 text-white">
               Ready to collaborate?

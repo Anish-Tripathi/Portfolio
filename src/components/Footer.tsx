@@ -18,13 +18,6 @@ const Footer = () => {
 
   return (
     <footer className="relative overflow-hidden">
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-500 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-purple-500 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-cyan-500 rounded-full blur-2xl animate-pulse delay-500"></div>
-      </div>
-
       {/* Main Footer Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-16">
         {/* Top Section */}
@@ -174,9 +167,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500"></div>
     </footer>
   );
 };

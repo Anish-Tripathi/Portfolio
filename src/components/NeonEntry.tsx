@@ -36,7 +36,7 @@ export const NeonEntry = ({
   }, [navigate, onAnimationComplete]);
 
   return (
-    <div className="flex items-center justify-center w-full h-screen bg-black overflow-hidden relative">
+    <div className="flex items-center justify-center w-full h-screen  overflow-hidden relative">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-radial from-blue-950/20 via-black to-black" />
 
@@ -200,7 +200,7 @@ export const NeonEntry = ({
               transition={{ duration: 0.6, delay: 1.2 }}
             >
               <span className="text-sm tracking-wide mr-4">
-                ENTERING PORTFOLIO
+                WELCOME TO MY TECHNICAL UNIVERSE
               </span>
               <div className="flex space-x-1">
                 {[0, 1, 2].map((i) => (

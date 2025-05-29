@@ -129,7 +129,7 @@ function Contact() {
             variants={containerVariants}
           >
             <motion.div
-              className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-sm p-8 rounded-2xl border border-white/5 shadow-xl"
+              className="  p-8 rounded-2xl border border-white/5 shadow-xl"
               variants={itemVariants}
               whileHover={{
                 y: -5,
@@ -176,7 +176,7 @@ function Contact() {
             </motion.div>
 
             <motion.div
-              className="bg-gradient-to-br from-gray-800/40 to-gray-900/40 backdrop-blur-sm p-8 rounded-2xl border border-white/5 shadow-xl"
+              className="  p-8 rounded-2xl border border-white/5 shadow-xl"
               variants={itemVariants}
               whileHover={{
                 y: -5,
@@ -198,7 +198,7 @@ function Contact() {
                   href="https://github.com/Anish-Tripathi"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white/5 hover:bg-white/10 text-white/80 hover:text-white transition-all"
+                  className="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-white/10 text-white/80 hover:text-white transition-all"
                   whileHover={{ y: -5, scale: 1.03 }}
                 >
                   <Github className="w-6 h-6" />
@@ -209,7 +209,7 @@ function Contact() {
                   href="https://www.linkedin.com/in/anish-t-223238270/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white/5 hover:bg-white/10 text-white/80 hover:text-white transition-all"
+                  className="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-white/10 text-white/80 hover:text-white transition-all"
                   whileHover={{ y: -5, scale: 1.03 }}
                 >
                   <Linkedin className="w-6 h-6" />
@@ -220,7 +220,7 @@ function Contact() {
                   href="https://leetcode.com/u/AnishTripathi/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white/5 hover:bg-white/10 text-white/80 hover:text-white transition-all"
+                  className="flex flex-col items-center gap-2 p-4 rounded-xl  hover:bg-white/10 text-white/80 hover:text-white transition-all"
                   whileHover={{ y: -5, scale: 1.03 }}
                 >
                   <Code2 className="w-6 h-6" />
@@ -231,7 +231,7 @@ function Contact() {
                   href="https://www.instagram.com/yourusername/?__pwa=1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex flex-col items-center gap-2 p-4 rounded-xl bg-white/5 hover:bg-white/10 text-white/80 hover:text-white transition-all"
+                  className="flex flex-col items-center gap-2 p-4 rounded-xl hover:bg-white/10 text-white/80 hover:text-white transition-all"
                   whileHover={{ y: -5, scale: 1.03 }}
                 >
                   <Instagram className="w-6 h-6" />
@@ -373,8 +373,8 @@ function Contact() {
       >
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-5 animate-blob"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-5 animate-blob animation-delay-2000"></div>
+          <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter  opacity-5 animate-blob"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter opacity-5 animate-blob animation-delay-2000"></div>
         </div>
 
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">

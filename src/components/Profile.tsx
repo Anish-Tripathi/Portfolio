@@ -1,23 +1,13 @@
-import { useEffect, useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import Typed from "typed.js";
 import { Download, Code2 } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Lottie from "lottie-react";
 
 function Hero() {
   const typedRef = useRef(null);
-  const lottieRef = useRef(null);
-  const [showAnimation, setShowAnimation] = useState(false);
-  const [animationData, setAnimationData] = useState(null);
 
   // Load animation data
-  useEffect(() => {
-    fetch("/animations/profileAnimation.json")
-      .then((response) => response.json())
-      .then((data) => setAnimationData(data))
-      .catch((error) => console.error("Error loading animation:", error));
-  }, []);
 
   // Initialize typed.js
   useEffect(() => {
@@ -42,24 +32,8 @@ function Hero() {
     };
   }, []);
 
-  // Toggle between image and animation automatically
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowAnimation((prev) => !prev);
-    }, 5000); // Toggle every 5 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="min-h-screen  px-4 md:px-8 pt-16 overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob"></div>
-        <div className="absolute top-96 right-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-0 left-1/2 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-blob animation-delay-4000"></div>
-      </div>
-
       {/* Floating particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {Array.from({ length: 15 }).map((_, i) => (
@@ -78,21 +52,20 @@ function Hero() {
       </div>
 
       <motion.div
-        className="relative max-w-7xl mx-auto py-16"
+        className="relative max-w-7xl mx-auto py-10"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        {/* Hexagonal layout */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* Left Content */}
           <motion.div
-            className="flex-1 text-white space-y-8 z-10"
+            className="flex-1 text-white space-y-8 z-10 ml-8"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="space-y-2">
+            <div className="">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -168,50 +141,19 @@ function Hero() {
 
           {/* Right Animated Profile with Hexagonal Design */}
           <motion.div
-            className="flex-1 flex justify-center relative"
+            className="flex-1 flex justify-center relative ml-12"
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="absolute -z-10 w-110 h-110 lg:w-[550px] lg:h-[550px]">
-              {/* Decorative hexagonal background */}
-              <svg
-                width="100%"
-                height="100%"
-                viewBox="0 0 100 100"
-                preserveAspectRatio="none"
-              >
-                <defs>
-                  <linearGradient
-                    id="hexGradient"
-                    x1="0%"
-                    y1="0%"
-                    x2="100%"
-                    y2="100%"
-                  >
-                    <stop offset="0%" stopColor="#3B82F6" stopOpacity="0.2" />
-                    <stop offset="100%" stopColor="#8B5CF6" stopOpacity="0.2" />
-                  </linearGradient>
-                </defs>
-                <polygon
-                  points="50,0 93.3,25 93.3,75 50,100 6.7,75 6.7,25"
-                  fill="url(#hexGradient)"
-                  stroke="url(#hexGradient)"
-                  strokeWidth="0.5"
-                  className="animate-pulse"
-                />
-              </svg>
-            </div>
-
-            {/* The profile container with animation and image */}
             <motion.div
-              className="relative w-75 h-75 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden"
+              className="relative w-65 h-65 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden"
               whileHover={{ scale: 1.03 }}
               transition={{ duration: 0.3 }}
             >
               {/* Glowing border that pulses */}
               <motion.div
-                className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full blur-sm"
+                className="absolute -inset-1  rounded-full "
                 animate={{
                   opacity: [0.4, 0.8, 0.4],
                 }}
@@ -223,89 +165,36 @@ function Hero() {
               ></motion.div>
 
               <div className="relative h-full w-full rounded-full overflow-hidden">
-                {/* Image and Animation Container */}
+                {/* Video Container */}
                 <div className="w-full h-full relative">
-                  <AnimatePresence mode="wait">
-                    {!showAnimation ? (
-                      <motion.div
-                        key="image"
-                        className="absolute inset-0"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 1 }}
-                      >
-                        <img
-                          src="/profile.jpg"
-                          alt="Anish Tripathi"
-                          className="w-full h-full object-cover"
-                        />
-                      </motion.div>
-                    ) : (
-                      <motion.div
-                        key="animation"
-                        className="absolute inset-0"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                        transition={{ duration: 1 }}
-                      >
-                        {animationData && (
-                          <Lottie
-                            lottieRef={lottieRef}
-                            animationData={animationData}
-                            loop={true}
-                            autoplay={true}
-                            className="w-full h-full object-contain"
-                          />
-                        )}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-
-                {/* Subtle gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-30"></div>
-
-                {/* Toggle indicator dots */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-                  <div
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      !showAnimation ? "bg-white scale-125" : "bg-white/50"
-                    }`}
-                  ></div>
-                  <div
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      showAnimation ? "bg-white scale-125" : "bg-white/50"
-                    }`}
-                  ></div>
+                  <motion.div
+                    className="absolute inset-0"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                  >
+                    <video
+                      src="/animations/earth-animation.mp4"
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        console.error("Video failed to load:", e);
+                        // Type assertion for the video element
+                        const videoElement = e.target as HTMLVideoElement;
+                        // Fallback to a placeholder or alternative video
+                        videoElement.src = "/animations/fallback.mp4";
+                      }}
+                    />
+                  </motion.div>
                 </div>
               </div>
             </motion.div>
           </motion.div>
         </div>
       </motion.div>
-
-      {/* Add keyframes for floating particles */}
-      <style>{`
-        @keyframes float {
-          0% {
-            transform: translateY(0) translateX(0);
-          }
-          25% {
-            transform: translateY(-20px) translateX(10px);
-          }
-          50% {
-            transform: translateY(0) translateX(20px);
-          }
-          75% {
-            transform: translateY(20px) translateX(10px);
-          }
-          100% {
-            transform: translateY(0) translateX(0);
-          }
-        }
-      `}</style>
     </div>
   );
 }

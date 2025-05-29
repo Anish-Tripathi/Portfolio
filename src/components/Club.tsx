@@ -57,7 +57,7 @@ function Club() {
             <div className="flex flex-col items-center gap-6">
               {/* Image on top */}
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-cyan-500 rounded-full blur-md opacity-30"></div>
+                <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-cyan-500 rounded-full  opacity-30"></div>
                 <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 p-1 rounded-full relative">
                   <img
                     src="https://th.bing.com/th/id/OIP.Bsii0lqQnu0rzkejwK5oXgHaHa?rs=1&pid=ImgDetMain"
@@ -294,7 +294,7 @@ function Club() {
 
           {/* Other Campus Contributions - Separate Section */}
           <motion.div
-            className="bg-gradient-to-br from-zinc-900/50 to-black/80 p-8 rounded-xl shadow-2xl border border-zinc-700 backdrop-blur-sm"
+            className="bg-gradient-to-br from-zinc-900/50 to-black/80 p-8 rounded-xl shadow-2xl border border-zinc-700 "
             variants={fadeInUp}
             initial="initial"
             whileInView="animate"
