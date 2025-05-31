@@ -46,7 +46,7 @@ function Boards() {
 
           {/* Board Results Section */}
           <motion.div
-            className="bg-black/80 p-8 rounded-xl shadow-2xl border border-zinc-800 mb-10"
+            className="p-8 rounded-xl shadow-2xl border border-zinc-800 mb-10"
             variants={cardVariants}
             initial="initial"
             whileInView="animate"
@@ -98,7 +98,7 @@ function Boards() {
               ].map((item, index) => (
                 <motion.div
                   key={index}
-                  className="bg-gradient-to-br from-zinc-900 to-zinc-950 p-6 rounded-lg border border-zinc-800 hover:border-purple-500/50"
+                  className=" p-6 rounded-lg border border-zinc-800 hover:border-purple-500/50"
                   whileHover={{ y: -5 }}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}

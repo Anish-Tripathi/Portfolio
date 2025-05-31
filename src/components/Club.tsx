@@ -37,7 +37,7 @@ function Club() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl font-bold mb-4 text-white inline-block relative">
-              Technical Club: IET NITK
+              Campus Club Activites
               <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-blue-500"></span>
             </h2>
             <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -93,9 +93,9 @@ function Club() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <div className="bg-black/80 p-6 rounded-xl shadow-lg border border-zinc-800 h-full">
+              <div className="p-6 rounded-xl shadow-lg border border-zinc-800 h-full">
                 <div className="flex items-center mb-6">
-                  <div className="bg-gradient-to-r from-blue-600 to-cyan-600 p-2 rounded-lg mr-3">
+                  <div className=" p-2 rounded-lg mr-3">
                     <Users className="w-5 h-5 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-white">
@@ -105,7 +105,7 @@ function Club() {
 
                 <div className="space-y-4">
                   <motion.div
-                    className="bg-gradient-to-r from-zinc-900 to-zinc-800 p-5 rounded-lg border-l-4 border-purple-500"
+                    className=" p-5 rounded-lg border-l-4 border-purple-500"
                     whileHover={{ x: 5 }}
                   >
                     <h4 className="text-lg font-semibold mb-2 text-white flex items-center">
@@ -120,7 +120,7 @@ function Club() {
                   </motion.div>
 
                   <motion.div
-                    className="bg-gradient-to-r from-zinc-900 to-zinc-800 p-5 rounded-lg border-l-4 border-blue-500"
+                    className=" p-5 rounded-lg border-l-4 border-blue-500"
                     whileHover={{ x: 5 }}
                   >
                     <h4 className="text-lg font-semibold mb-2 text-white flex items-center">
@@ -134,7 +134,7 @@ function Club() {
                   </motion.div>
 
                   <motion.div
-                    className="bg-gradient-to-r from-zinc-900 to-zinc-800 p-5 rounded-lg border-l-4 border-cyan-500"
+                    className=" p-5 rounded-lg border-l-4 border-cyan-500"
                     whileHover={{ x: 5 }}
                   >
                     <h4 className="text-lg font-semibold mb-2 text-white flex items-center">
@@ -160,7 +160,7 @@ function Club() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <div className="bg-black/80 p-6 rounded-xl shadow-lg border border-zinc-800">
+              <div className="p-6 rounded-xl shadow-lg border border-zinc-800">
                 <div className="flex items-center mb-6">
                   <div className="bg-gradient-to-r from-blue-600 to-cyan-600 p-2 rounded-lg mr-3">
                     <Zap className="w-5 h-5 text-white" />
@@ -172,7 +172,7 @@ function Club() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                   <motion.div
-                    className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-5 rounded-lg border border-zinc-700 hover:border-blue-500/50"
+                    className=" p-5 rounded-lg border border-zinc-700 hover:border-blue-500/50"
                     whileHover={{ y: -5 }}
                     transition={{ duration: 0.2 }}
                   >
@@ -188,7 +188,7 @@ function Club() {
                   </motion.div>
 
                   <motion.div
-                    className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-5 rounded-lg border border-zinc-700 hover:border-cyan-500/50"
+                    className=" p-5 rounded-lg border border-zinc-700 hover:border-cyan-500/50"
                     whileHover={{ y: -5 }}
                     transition={{ duration: 0.2 }}
                   >
@@ -216,7 +216,7 @@ function Club() {
                     </div>
 
                     <motion.div
-                      className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-5 rounded-lg border border-zinc-700"
+                      className=" p-5 rounded-lg border border-zinc-700"
                       whileHover={{ scale: 1.01 }}
                     >
                       <p className="text-gray-300 leading-relaxed">
@@ -244,7 +244,7 @@ function Club() {
                     </div>
 
                     <motion.div
-                      className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-5 rounded-lg border border-zinc-700"
+                      className=" p-5 rounded-lg border border-zinc-700"
                       whileHover={{ scale: 1.01 }}
                     >
                       <p className="text-gray-300 leading-relaxed">
@@ -275,7 +275,7 @@ function Club() {
                     </div>
 
                     <motion.div
-                      className="bg-gradient-to-br from-zinc-900 to-zinc-800 p-5 rounded-lg border border-zinc-700"
+                      className=" p-5 rounded-lg border border-zinc-700"
                       whileHover={{ scale: 1.01 }}
                     >
                       <p className="text-gray-300 leading-relaxed">
@@ -294,7 +294,7 @@ function Club() {
 
           {/* Other Campus Contributions - Separate Section */}
           <motion.div
-            className="bg-gradient-to-br from-zinc-900/50 to-black/80 p-8 rounded-xl shadow-2xl border border-zinc-700 "
+            className=" p-8 rounded-xl shadow-2xl border border-zinc-700 "
             variants={fadeInUp}
             initial="initial"
             whileInView="animate"
@@ -306,7 +306,7 @@ function Club() {
                 <Globe className="w-6 h-6 text-white" />
               </div>
               <h2 className="text-3xl font-bold text-white">
-                Other Campus Contributions
+                Other Campus Clubs Contributions
               </h2>
             </div>
 
