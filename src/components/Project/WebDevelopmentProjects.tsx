@@ -1,0 +1,266 @@
+import { motion } from "framer-motion";
+import { FaSquareGithub } from "react-icons/fa6";
+import { FiExternalLink } from "react-icons/fi";
+
+interface WebDevelopmentProjectsProps {
+  setHoveredIndex: (index: number | null) => void;
+}
+
+const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
+  setHoveredIndex,
+}) => {
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.5 },
+    },
+  };
+
+  const projects = [
+    {
+      title: "CodeCollab",
+      description:
+        "AI-powered collaborative coding platform with real-time code editing, video/audio chat using WebRTC, and intelligent code assistance via LangChain and Pinecone. Built for pair programming, mock interviews, and team collaboration with a smart developer experience.",
+      tech: [
+        "Next.js",
+        "FastAPI",
+        "WebRTC",
+        "WebSockets",
+        "LangChain",
+        "Pinecone",
+        "JWT",
+        "OAuth2",
+      ],
+      link: "https://github.com/Anish-Tripathi/CodeCollab",
+      demo: "https://example.com/codecollab",
+      image: "/CodeCollab.png",
+    },
+    {
+      title: "SwapStay",
+      description:
+        "A comprehensive room swapping and guest house booking platform tailored for students. Features role-based access control, OTP-based email activation, real-time chat using WebSockets, and a dedicated mess booking module. Includes Stripe-powered payments, receipt generation, advanced filtering, and multi-theme support for a seamless user experience.",
+      tech: [
+        "React",
+        "Firebase",
+        "MongoDB",
+        "Express",
+        "Node.js",
+        "JWT",
+        "WebSockets",
+        "Stripe API",
+      ],
+      link: "https://github.com/Anish-Tripathi/SwapStay",
+      demo: "https://example.com/swapstay",
+      image: "/SwapStay.png",
+    },
+    {
+      title: "DineSmart",
+      description:
+        "Full-stack restaurant platform with smart filtering, live order tracking, OTP-based authentication, and secure Google OAuth. Features include role-based access, real-time table availability, Stripe payments, and a seamless customer/restaurant dashboard.",
+      tech: ["React", "Module CSS", "Express", "MongoDB", "Node.js", "JWT"],
+      link: "https://github.com/Anish-Tripathi/DineSmart",
+      demo: "https://example.com/dinesmart",
+      image: "/DineSmart.png",
+    },
+    {
+      title: "DeliverEase",
+      description:
+        "DeliverEase is a responsive web app for simulating last-mile delivery. It features live tracking, interactive routes with OpenStreetMap, flexible order booking, and automated distance and price estimation based on delivery factors like parcel weight, size, priority, and more. It also supports multi-stop deliveries, all managed through a clean, user-friendly dashboard.",
+      tech: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "OpenStreetMap API",
+        "Dijkstra Algorithm",
+        "Bootstrap",
+        "LocalStorage",
+      ],
+      link: "https://github.com/Anish-Tripathi/DeliverEase",
+      demo: "https://example.com/deliverease",
+      image: "/deliverEase.png",
+    },
+    {
+      title: "LeetAssist",
+      description:
+        "LeetAssist is an AI-powered Chrome extension designed to assist with solving LeetCode problems. It explains problem statements, identifies edge cases, debugs code, answers queries, and suggests optimal solutions. Users can also explore top community solutions, generate complete answers, and receive real-time guidance while coding.",
+      tech: [
+        "React",
+        "Chrome Extension",
+        "OpenAI API",
+        "Tailwind CSS",
+        "Prism.js",
+      ],
+      link: "https://github.com/Anish-Tripathi/LeetAssist",
+      demo: "https://example.com/leetassist",
+      image: "/LeetAssist.png",
+    },
+    {
+      title: "SumUp",
+      description:
+        "SumUp is an AI-powered Summarizer extension that boosts your reading experience. It lets you summarize web pages and PDFs in brief, detailed, or bullet-point formats, translate content into multiple languages, and clean up pages for distraction-free reading. You can also ask follow-up questions for deeper understanding—all within your browser",
+      tech: ["JavaScript", "Chrome Extension", "OpenAI API", "HTML", "CSS"],
+      link: "https://github.com/Anish-Tripathi/SumUp",
+      demo: "https://example.com/sumup",
+      image: "/SumUp.png",
+    },
+
+    {
+      title: "SkyCast",
+      description:
+        "Interactive weather dashboard with hourly and weekly forecasts, geolocation-based updates, and historical weather trends using Chart.js. Integrates OpenWeatherMap API and radar maps for accurate and visually rich weather insights.",
+      tech: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "OpenWeatherMap API",
+        "Geolocation API",
+      ],
+      link: "https://github.com/Anish-Tripathi/SkyCast",
+      demo: "https://nebula-weather.vercel.app/",
+      image: "/weather.png",
+    },
+    {
+      title: "Calcify",
+      description:
+        "Calcify is a sleek, intelligent calculator designed for real-world usability and clarity. It supports everything from basic arithmetic to advanced scientific functions, and goes beyond traditional calculators by providing step-by-step explanations, natural language input, and a responsive, visually refined UI.",
+      tech: ["ReactJS", "Bootstrap", "Context API", "Math.js", "CSS Grid"],
+      link: "https://github.com/Anish-Tripathi/Calcify",
+      demo: "https://calcify-tau.vercel.app/",
+      image: "/Calcify.png",
+    },
+    {
+      title: "FlashFeed",
+      description:
+        "FlashFeed is a one-stop portal for real-time, categorized news from trusted sources around the globe. Built using HTML, CSS, and Vanilla JavaScript, FlashFeed pulls the latest headlines using a News API and presents them in a fast, intuitive, and visually appealing interface.",
+      tech: ["HTML5", "CSS3", "JavaScript", "News API", "Responsive Design"],
+      link: "https://github.com/Anish-Tripathi/FlashFeed",
+      demo: "https://flash-feed-amber.vercel.app/",
+      image: "/flashFeed.png",
+    },
+    {
+      title: "Tic-Tac-Toe",
+      description:
+        "Interactive game with smart winning detection algorithms, animated transitions between moves, and a sleek minimalist design. Features game history tracking and customizable player avatars.",
+      tech: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "LocalStorage API",
+        "CSS Animations",
+      ],
+      link: "https://github.com/Anish-Tripathi/Tic-Tac-Toe",
+      demo: "https://tic-tac-toe-indol-kappa.vercel.app/",
+      image: "/TicTacToe.png",
+    },
+    {
+      title: "ToDoList",
+      description:
+        "A simple task manager built to practice React basics like hooks and state. Allows users to add, delete, and mark tasks as done, with optional dark/light mode and basic styling using Bootstrap.",
+      tech: ["ReactJS", "Bootstrap", "React Hooks"],
+      image: "/ToDoList.png",
+    },
+    {
+      title: "Connectify",
+      description:
+        "A beginner-friendly social media UI project designed to mimic the core layout and interactions of modern platforms. Includes post cards, user profiles, follow buttons, and a basic responsive feed layout to practice frontend skills.",
+      tech: ["React", "Bootstrap", "Node.js"],
+      image: "/Connectify.png",
+    },
+    {
+      title: "FoodList",
+      description:
+        "Basic food listing app created to explore state management in React. Lets users add and reorder items with simple animations and persistent state using local storage.",
+      tech: ["ReactJS", "Bootstrap"],
+      image: "/FoodList.png",
+    },
+  ];
+
+  return (
+    <motion.div className="mb-24" variants={itemVariants}>
+      <div className="flex items-center justify-center mb-16">
+        <div className="h-px w-16 bg-gradient-to-r from-transparent to-blue-500"></div>
+        <h2 className="text-4xl font-bold text-white mx-4 relative">
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+            Web Development Projects
+          </span>
+        </h2>
+        <div className="h-px w-16 bg-gradient-to-l from-transparent to-purple-500"></div>
+      </div>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((project, index) => (
+          <motion.div
+            key={index}
+            className="p-6 rounded-xl border border-zinc-800 shadow-lg transform transition duration-300 h-full"
+            whileHover={{
+              y: -10,
+              boxShadow:
+                "0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              borderColor: "rgba(139, 92, 246, 0.3)",
+            }}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={itemVariants}
+          >
+            <div className="relative overflow-hidden rounded-lg mb-6 group">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-contain transition-all duration-500 transform group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center">
+                <div className="p-4 w-full flex justify-center space-x-4 translate-y-10 group-hover:translate-y-0 transition-transform duration-300">
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      className="px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded-lg text-white text-sm font-medium flex items-center gap-2 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FiExternalLink size={16} />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      className="px-4 py-2 bg-zinc-800 hover:bg-zinc-700 rounded-lg text-white text-sm font-medium flex items-center gap-2 transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaSquareGithub size={16} />
+                      <span>Code</span>
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+            <h3 className="text-xl font-bold mb-3 text-white">
+              {project.title}
+            </h3>
+            <p className="text-gray-400 mb-4 text-sm">{project.description}</p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              {project.tech.map((tech, i) => (
+                <span
+                  key={i}
+                  className="px-3 py-1 bg-gradient-to-r from-blue-900/40 to-purple-900/40 rounded-full text-xs text-gray-300 backdrop-blur-sm"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        ))}
+      </div>
+    </motion.div>
+  );
+};
+
+export default WebDevelopmentProjects;

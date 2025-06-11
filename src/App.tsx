@@ -5,15 +5,15 @@ import {
   useLocation,
 } from "react-router-dom";
 import Profile from "./components/Profile";
-import Academic from "./components/Academic";
-import About from "./components/About";
-import Project from "./components/Project";
+import Academic from "./components/Career/Academic";
+import About from "./components/About/About";
+import Project from "./components/Project/Project";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { NeonEntry } from "./components/NeonEntry";
-import Career from "./components/Career";
-import Background from "./components/Background"; // Import the new component
+import Career from "./components/Career/Career";
+import Background from "./components/Background";
 
 function AppContent() {
   const location = useLocation();
