@@ -125,10 +125,7 @@ function AboutSkills() {
           name: "Prompt Eng",
           icon: <BookOpen size={24} className="text-blue-300" />,
         },
-        {
-          name: "AI APIs",
-          icon: <Braces size={24} className="text-emerald-400" />,
-        },
+
         {
           name: "LangChain",
           icon: <Braces size={24} className="text-purple-600" />,
@@ -339,6 +336,7 @@ function AboutSkills() {
                   "Database Management Systems",
                   "Object-Oriented Programming",
                   "Computer Networks",
+                  "Computer Architecture",
                   "Cyber Security & Privacy",
                   "Quantum Computing Fundamentals",
                 ].map((course, idx) => (
@@ -359,13 +357,6 @@ function AboutSkills() {
                     whileHover={{
                       scale: 1.05,
                       backgroundColor: "rgba(59, 130, 246, 0.3)",
-                    }}
-                    animate={{
-                      boxShadow: [
-                        "0 0 5px rgba(59, 130, 246, 0.3)",
-                        "0 0 15px rgba(59, 130, 246, 0.5)",
-                        "0 0 5px rgba(59, 130, 246, 0.3)",
-                      ],
                     }}
                     className="text-blue-300 text-sm py-1.5 px-3 rounded-full border border-blue-500/30"
                   >

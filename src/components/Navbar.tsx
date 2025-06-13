@@ -55,9 +55,9 @@ const Navbar = () => {
             className="relative"
           >
             <img
-              src="/Avatar.jpg"
+              src="/Avatar.png"
               alt="Anish Tripathi"
-              className="w-11 h-11 rounded-full object-cover border-2 border-blue-400 shadow-md shadow-blue-500/50 transition-all duration-300 transform z-10"
+              className="w-11 h-11 rounded-full object-cover border-1 border-blue-400 shadow-md shadow-blue-500/50 transition-all duration-300 transform z-10"
             />
           </motion.div>
         </Link>
