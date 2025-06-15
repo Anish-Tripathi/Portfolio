@@ -105,6 +105,24 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       demo: "",
       image: "/SumUp.png",
     },
+    {
+      title: "StayFinder",
+      description:
+        "StayFinder is a full-stack Airbnb-like web application that enables users to list, search, and book properties for short-term or long-term stays. Built with a modern stack including React, TypeScript, and Tailwind CSS, it features secure authentication, dynamic listing pages, search filters, a host dashboard, and mock payments. This project offers hands-on experience across both frontend and backend development with RESTful APIs and real-world booking workflows.",
+      tech: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Express",
+        "Socket.io",
+        "MongoDB",
+        "Stripe",
+        "Mapbox",
+      ],
+      link: "https://github.com/Anish-Tripathi/StayFinder",
+      demo: "",
+      image: "/StayFinder.png",
+    },
 
     {
       title: "SkyCast",
