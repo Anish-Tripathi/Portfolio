@@ -84,7 +84,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
     {
       title: "LeetAssist",
       description:
-        "LeetAssist is an AI-powered Chrome extension designed to assist with solving LeetCode problems. It explains problem statements, identifies edge cases, debugs code, answers queries, and suggests optimal solutions. Users can also explore top community solutions, generate complete answers, and receive real-time guidance while coding.",
+        "LeetAssist is your intelligent LeetCode companion that does more than just explain. It breaks down problems, walks through test cases, provides optimized code solutions, and suggests better complexities. Ask follow-up questions, get real-time feedback, and explore multiple programming languages- all from a sleek, interactive Chrome extension.",
       tech: [
         "React",
         "Chrome Extension",
@@ -93,7 +93,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
         "Prism.js",
       ],
       link: "https://github.com/Anish-Tripathi/LeetAssist",
-      demo: "https://example.com/leetassist",
+      demo: "",
       image: "/LeetAssist.png",
     },
     {
