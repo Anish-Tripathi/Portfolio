@@ -99,10 +99,10 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
     {
       title: "SumUp",
       description:
-        "SumUp is an AI-powered Summarizer extension that boosts your reading experience. It lets you summarize web pages and PDFs in brief, detailed, or bullet-point formats, translate content into multiple languages, and clean up pages for distraction-free reading. You can also ask follow-up questions for deeper understanding—all within your browser",
+        "SumUp is a smart AI-powered Chrome extension that transforms articles and PDFs into concise, detailed, or bullet-point summaries. It supports multilingual translation, distraction-free reading, summary downloads, history tracking, and follow-up questions—everything right within your browser.",
       tech: ["JavaScript", "Chrome Extension", "OpenAI API", "HTML", "CSS"],
       link: "https://github.com/Anish-Tripathi/SumUp",
-      demo: "https://example.com/sumup",
+      demo: "",
       image: "/SumUp.png",
     },
 
