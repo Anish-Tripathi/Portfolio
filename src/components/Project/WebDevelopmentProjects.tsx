@@ -108,7 +108,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
     {
       title: "StayFinder",
       description:
-        "StayFinder is a full-stack Airbnb-like web application that enables users to list, search, and book properties for short-term or long-term stays. Built with a modern stack, it features secure authentication, dynamic listing pages, search filters, a host dashboard, and mock payments.",
+        "StayFinder is a full-stack web app for listing, discovering, and booking properties worldwide. It supports guests and hosts with role-based dashboards, real-time chat, interactive map search, favorites and rating system, secure payments, advanced filters, and dynamic property management—offering an enhanced and seamless alternative to Airbnb",
       tech: [
         "React",
         "TypeScript",
@@ -117,7 +117,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
         "Socket.io",
         "MongoDB",
         "Stripe",
-        "Mapbox",
+        "Leaflet",
       ],
       link: "https://github.com/Anish-Tripathi/StayFinder",
       demo: "",
