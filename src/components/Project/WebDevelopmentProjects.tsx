@@ -56,6 +56,25 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       image: "/SwapStay.png",
     },
     {
+      title: "StayFinder",
+      description:
+        "StayFinder is a full-stack web app for listing, discovering, and booking properties worldwide. It supports guests and hosts with role-based dashboards, real-time chat, interactive map search, favorites and rating system, secure payments, advanced filters, and dynamic property management—offering an enhanced and seamless alternative to Airbnb",
+      tech: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Express",
+        "Socket.io",
+        "MongoDB",
+        "Stripe",
+        "Leaflet",
+      ],
+      link: "https://github.com/Anish-Tripathi/StayFinder",
+      demo: "",
+      image: "/StayFinder.png",
+    },
+
+    {
       title: "DineSmart",
       description:
         "Full-stack restaurant platform with smart filtering, live order tracking, OTP-based authentication, and secure Google OAuth. Features include role-based access, real-time table availability, Stripe payments, and a seamless customer/restaurant dashboard.",
@@ -63,23 +82,6 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       link: "https://github.com/Anish-Tripathi/DineSmart",
       demo: "https://example.com/dinesmart",
       image: "/DineSmart.png",
-    },
-    {
-      title: "DeliverEase",
-      description:
-        "DeliverEase is a responsive web app for simulating last-mile delivery. It features live tracking, interactive routes with OpenStreetMap, flexible order booking, and automated distance and price estimation based on delivery factors like parcel weight, size, priority, and more. It also supports multi-stop deliveries, all managed through a clean, user-friendly dashboard.",
-      tech: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "OpenStreetMap API",
-        "Geolocation services",
-        "Bootstrap",
-        "LocalStorage",
-      ],
-      link: "https://github.com/Anish-Tripathi/DeliverEase",
-      demo: "https://example.com/deliverease",
-      image: "/deliverEase.png",
     },
     {
       title: "LeetAssist",
@@ -106,24 +108,31 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       image: "/SumUp.png",
     },
     {
-      title: "StayFinder",
+      title: "DeliverEase",
       description:
-        "StayFinder is a full-stack web app for listing, discovering, and booking properties worldwide. It supports guests and hosts with role-based dashboards, real-time chat, interactive map search, favorites and rating system, secure payments, advanced filters, and dynamic property management—offering an enhanced and seamless alternative to Airbnb",
+        "DeliverEase is a responsive web app for simulating last-mile delivery. It features live tracking, interactive routes with OpenStreetMap, flexible order booking, and automated distance and price estimation based on delivery factors like parcel weight, size, priority, and more. It also supports multi-stop deliveries, all managed through a clean, user-friendly dashboard.",
       tech: [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Express",
-        "Socket.io",
-        "MongoDB",
-        "Stripe",
-        "Leaflet",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "OpenStreetMap API",
+        "Geolocation services",
+        "Bootstrap",
+        "LocalStorage",
       ],
-      link: "https://github.com/Anish-Tripathi/StayFinder",
-      demo: "",
-      image: "/StayFinder.png",
+      link: "https://github.com/Anish-Tripathi/DeliverEase",
+      demo: "https://example.com/deliverease",
+      image: "/deliverEase.png",
     },
-
+    {
+      title: "FlashFeed",
+      description:
+        "FlashFeed is a one-stop portal for real-time, categorized news from trusted sources around the globe. Built using HTML, CSS, and Vanilla JavaScript, FlashFeed pulls the latest headlines using a News API and presents them in a fast, intuitive, and visually appealing interface.",
+      tech: ["HTML5", "CSS3", "JavaScript", "News API", "Responsive Design"],
+      link: "https://github.com/Anish-Tripathi/FlashFeed",
+      demo: "https://flash-feed-amber.vercel.app/",
+      image: "/flashFeed.png",
+    },
     {
       title: "SkyCast",
       description:
@@ -151,16 +160,14 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       image: "/Calcify.png",
     },
     {
-      title: "FlashFeed",
+      title: "TaskFlow",
       description:
-        "FlashFeed is a one-stop portal for real-time, categorized news from trusted sources around the globe. Built using HTML, CSS, and Vanilla JavaScript, FlashFeed pulls the latest headlines using a News API and presents them in a fast, intuitive, and visually appealing interface.",
-      tech: ["HTML5", "CSS3", "JavaScript", "News API", "Responsive Design"],
-      link: "https://github.com/Anish-Tripathi/FlashFeed",
-      demo: "https://flash-feed-amber.vercel.app/",
-      image: "/flashFeed.png",
+        "A simple task manager built to practice React basics like hooks and state. Allows users to add, delete, and mark tasks as done, with optional dark/light mode and basic styling using Bootstrap.",
+      tech: ["ReactJS", "Bootstrap", "React Hooks"],
+      image: "/ToDoList.png",
     },
     {
-      title: "Tic-Tac-Toe",
+      title: "Tic Tac Toe",
       description:
         "Interactive game with smart winning detection algorithms, animated transitions between moves, and a sleek minimalist design. Features game history tracking and customizable player avatars.",
       tech: [
@@ -173,13 +180,6 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       link: "https://github.com/Anish-Tripathi/Tic-Tac-Toe",
       demo: "https://tic-tac-toe-indol-kappa.vercel.app/",
       image: "/TicTacToe.png",
-    },
-    {
-      title: "ToDoList",
-      description:
-        "A simple task manager built to practice React basics like hooks and state. Allows users to add, delete, and mark tasks as done, with optional dark/light mode and basic styling using Bootstrap.",
-      tech: ["ReactJS", "Bootstrap", "React Hooks"],
-      image: "/ToDoList.png",
     },
     {
       title: "Connectify",

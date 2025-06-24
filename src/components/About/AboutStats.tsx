@@ -13,7 +13,7 @@ function AboutStats() {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         {[
           {
-            value: "3+",
+            value: "1.5+",
             label: "Years Coding",
             icon: <Code className="text-blue-500" size={24} />,
           },
