@@ -343,8 +343,8 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
 
   return (
     <>
-      {renderProjectSection("Featured Projects", personalProjects, 2)}
       {renderProjectSection("Paid/Internship Projects", internshipProjects, 1)}
+      {renderProjectSection("Featured Projects", personalProjects, 2)}
     </>
   );
 };
