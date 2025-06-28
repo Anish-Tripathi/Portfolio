@@ -108,6 +108,24 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       image: "/SumUp.png",
     },
     {
+      title: "TrackWise",
+      description:
+        "Personal finance tracker with secure Clerk authentication, real-time expense and income management, categorized transaction insights, and filtering by date. Includes a responsive dashboard, PostgreSQL backend, and JWT-based protected API using FastAPI.",
+      tech: [
+        "React",
+        "Clerk",
+        "Tailwind CSS",
+        "FastAPI",
+        "PostgreSQL",
+        "SQLAlchemy",
+        "JWT",
+        "Axios",
+      ],
+      link: "https://github.com/Anish-Tripathi/TrackWise",
+      demo: "https://trackwise.vercel.app/",
+      image: "/trackwise.png",
+    },
+    {
       title: "DeliverEase",
       description:
         "DeliverEase is a responsive web app for simulating last-mile delivery. It features live tracking, interactive routes with OpenStreetMap, flexible order booking, and automated distance and price estimation based on delivery factors like parcel weight, size, priority, and more. It also supports multi-stop deliveries, all managed through a clean, user-friendly dashboard.",
