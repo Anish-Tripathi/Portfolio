@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Code, Briefcase, Database, Award } from "lucide-react";
+import { Code, Briefcase, Database, Award, Building2 } from "lucide-react";
 
 function AboutStats() {
   return (
@@ -10,7 +10,7 @@ function AboutStats() {
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
     >
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
         {[
           {
             value: "1.5+",
@@ -18,14 +18,19 @@ function AboutStats() {
             icon: <Code className="text-blue-500" size={24} />,
           },
           {
-            value: "20+",
+            value: "25+",
             label: "Projects Completed",
             icon: <Briefcase className="text-blue-500" size={24} />,
           },
           {
             value: "20+",
-            label: "Technologies",
+            label: "Technologies Used",
             icon: <Database className="text-blue-500" size={24} />,
+          },
+          {
+            value: "4",
+            label: "Companies Contributed",
+            icon: <Building2 className="text-blue-500" size={24} />,
           },
           {
             value: "10+",

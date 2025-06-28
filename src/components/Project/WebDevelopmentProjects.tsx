@@ -20,6 +20,88 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
 
   const projects = [
     {
+      title: "StayFinder",
+      description:
+        "Developed a full-stack property booking platform for The Glen, India’s premier hospitality service company, during a 2-month paid internship, earning an incentive for exceptional work.",
+      tech: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Express",
+        "Socket.io",
+        "MongoDB",
+        "Stripe",
+        "Leaflet",
+      ],
+      link: "https://github.com/Anish-Tripathi/StayFinder",
+      demo: "",
+      image: "/StayFinder.png",
+      category: "internship",
+    },
+    {
+      title: "LeetAssist",
+      description:
+        "Contributed to Screen By AI’s flagship product Slingshot, an AI-powered mock interview and coding assistant platform, during a paid 1-month internship. Features problem breakdowns, optimized code solutions, and real-time feedback via a Chrome extension.",
+      tech: [
+        "React",
+        "Chrome Extension",
+        "OpenAI API",
+        "Tailwind CSS",
+        "TypeScript",
+      ],
+      link: "https://github.com/Anish-Tripathi/LeetAssist",
+      demo: "",
+      image: "/LeetAssist.png",
+      category: "internship",
+    },
+    {
+      title: "TrackWise",
+      description:
+        "Developed a personal finance and transaction tracking web app for AMRR TechSols Pvt. Ltd. as part of a 3-month paid internship. Features secure Clerk authentication, real-time expense and income management, categorized transaction insights, and a responsive dashboard.",
+      tech: [
+        "React",
+        "Clerk",
+        "Tailwind CSS",
+        "FastAPI",
+        "PostgreSQL",
+        "SQLAlchemy",
+        "JWT",
+        "Axios",
+      ],
+      link: "https://github.com/Anish-Tripathi/TrackWise",
+      demo: "https://trackwise.vercel.app/",
+      image: "/trackwise.png",
+      category: "internship",
+    },
+    {
+      title: "GigFloww Dashboard",
+      description:
+        "Built a modern HR management dashboard for GigFloww, a US/UK-based HR consultancy, as a paid 1-month internship project. Features intuitive interfaces for candidate tracking, onboarding workflows, and workforce analytics, crafted using Shadcn UI for a responsive experience.",
+      tech: [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Vite",
+        "Zustand",
+        "React Router",
+      ],
+      link: "https://github.com/Anish-Tripathi/GigFloww-Dashboard",
+      demo: "https://gig-floww-dashboard.vercel.app/",
+      image: "/gigfloww.png",
+      category: "internship",
+    },
+    {
+      title: "Calcify",
+      description:
+        "Developed a sleek, intelligent calculator with step-by-step explanations and natural language input for Oasis Infobyte Solution Pvt Ltd as an unpaid virtual internship project. Supports basic arithmetic to advanced scientific functions with a responsive UI.",
+      tech: ["ReactJS", "Bootstrap", "Context API", "Math.js", "CSS Grid"],
+      link: "https://github.com/Anish-Tripathi/Calcify",
+      demo: "https://calcify-tau.vercel.app/",
+      image: "/Calcify.png",
+      category: "internship",
+    },
+    {
       title: "CodeCollab",
       description:
         "AI-powered collaborative coding platform with real-time code editing, video/audio chat using WebRTC, and intelligent code assistance via LangChain and Pinecone. Built for pair programming, mock interviews, and team collaboration with a smart developer experience.",
@@ -36,6 +118,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       link: "https://github.com/Anish-Tripathi/CodeCollab",
       demo: "https://example.com/codecollab",
       image: "/CodeCollab.png",
+      category: "personal",
     },
     {
       title: "SwapStay",
@@ -54,26 +137,8 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       link: "https://github.com/Anish-Tripathi/SwapStay",
       demo: "https://example.com/swapstay",
       image: "/SwapStay.png",
+      category: "personal",
     },
-    {
-      title: "StayFinder",
-      description:
-        "StayFinder is a full-stack web app for listing, discovering, and booking properties worldwide. It supports guests and hosts with role-based dashboards, real-time chat, interactive map search, favorites and rating system, secure payments, advanced filters, and dynamic property management—offering an enhanced and seamless alternative to Airbnb",
-      tech: [
-        "React",
-        "TypeScript",
-        "Tailwind CSS",
-        "Express",
-        "Socket.io",
-        "MongoDB",
-        "Stripe",
-        "Leaflet",
-      ],
-      link: "https://github.com/Anish-Tripathi/StayFinder",
-      demo: "",
-      image: "/StayFinder.png",
-    },
-
     {
       title: "DineSmart",
       description:
@@ -82,21 +147,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       link: "https://github.com/Anish-Tripathi/DineSmart",
       demo: "https://example.com/dinesmart",
       image: "/DineSmart.png",
-    },
-    {
-      title: "LeetAssist",
-      description:
-        "LeetAssist is your intelligent LeetCode companion that does more than just explain. It breaks down problems, walks through test cases, provides optimized code solutions, and suggests better complexities. Ask follow-up questions, get real-time feedback, and explore multiple programming languages- all from a sleek, interactive Chrome extension.",
-      tech: [
-        "React",
-        "Chrome Extension",
-        "OpenAI API",
-        "Tailwind CSS",
-        "TypeScript",
-      ],
-      link: "https://github.com/Anish-Tripathi/LeetAssist",
-      demo: "",
-      image: "/LeetAssist.png",
+      category: "personal",
     },
     {
       title: "SumUp",
@@ -106,24 +157,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       link: "https://github.com/Anish-Tripathi/SumUp",
       demo: "",
       image: "/SumUp.png",
-    },
-    {
-      title: "TrackWise",
-      description:
-        "Personal finance tracker with secure Clerk authentication, real-time expense and income management, categorized transaction insights, and filtering by date. Includes a responsive dashboard, PostgreSQL backend, and JWT-based protected API using FastAPI.",
-      tech: [
-        "React",
-        "Clerk",
-        "Tailwind CSS",
-        "FastAPI",
-        "PostgreSQL",
-        "SQLAlchemy",
-        "JWT",
-        "Axios",
-      ],
-      link: "https://github.com/Anish-Tripathi/TrackWise",
-      demo: "https://trackwise.vercel.app/",
-      image: "/trackwise.png",
+      category: "personal",
     },
     {
       title: "DeliverEase",
@@ -141,6 +175,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       link: "https://github.com/Anish-Tripathi/DeliverEase",
       demo: "https://example.com/deliverease",
       image: "/deliverEase.png",
+      category: "personal",
     },
     {
       title: "FlashFeed",
@@ -150,6 +185,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       link: "https://github.com/Anish-Tripathi/FlashFeed",
       demo: "https://flash-feed-amber.vercel.app/",
       image: "/flashFeed.png",
+      category: "personal",
     },
     {
       title: "SkyCast",
@@ -167,15 +203,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       link: "https://github.com/Anish-Tripathi/SkyCast",
       demo: "https://nebula-weather.vercel.app/",
       image: "/weather.png",
-    },
-    {
-      title: "Calcify",
-      description:
-        "Calcify is a sleek, intelligent calculator designed for real-world usability and clarity. It supports everything from basic arithmetic to advanced scientific functions, and goes beyond traditional calculators by providing step-by-step explanations, natural language input, and a responsive, visually refined UI.",
-      tech: ["ReactJS", "Bootstrap", "Context API", "Math.js", "CSS Grid"],
-      link: "https://github.com/Anish-Tripathi/Calcify",
-      demo: "https://calcify-tau.vercel.app/",
-      image: "/Calcify.png",
+      category: "personal",
     },
     {
       title: "TaskFlow",
@@ -183,6 +211,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
         "A simple task manager built to practice React basics like hooks and state. Allows users to add, delete, and mark tasks as done, with optional dark/light mode and basic styling using Bootstrap.",
       tech: ["ReactJS", "Bootstrap", "React Hooks"],
       image: "/ToDoList.png",
+      category: "personal",
     },
     {
       title: "Tic Tac Toe",
@@ -198,6 +227,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
       link: "https://github.com/Anish-Tripathi/Tic-Tac-Toe",
       demo: "https://tic-tac-toe-indol-kappa.vercel.app/",
       image: "/TicTacToe.png",
+      category: "personal",
     },
     {
       title: "Connectify",
@@ -205,6 +235,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
         "A beginner-friendly social media UI project designed to mimic the core layout and interactions of modern platforms. Includes post cards, user profiles, follow buttons, and a basic responsive feed layout to practice frontend skills.",
       tech: ["React", "Bootstrap", "Node.js"],
       image: "/Connectify.png",
+      category: "personal",
     },
     {
       title: "FoodList",
@@ -212,24 +243,36 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
         "Basic food listing app created to explore state management in React. Lets users add and reorder items with simple animations and persistent state using local storage.",
       tech: ["ReactJS", "Bootstrap"],
       image: "/FoodList.png",
+      category: "personal",
     },
   ];
 
-  return (
+  const internshipProjects = projects.filter(
+    (project) => project.category === "internship"
+  );
+  const personalProjects = projects.filter(
+    (project) => project.category === "personal"
+  );
+
+  const renderProjectSection = (
+    title: string,
+    projectList: typeof projects,
+    sectionIndex: number
+  ) => (
     <motion.div className="mb-24" variants={itemVariants}>
       <div className="flex items-center justify-center mb-16">
         <div className="h-px w-16 bg-gradient-to-r from-transparent to-blue-500"></div>
         <h2 className="text-4xl font-bold text-white mx-4 relative">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-            Web Development Projects
+            {title}
           </span>
         </h2>
         <div className="h-px w-16 bg-gradient-to-l from-transparent to-purple-500"></div>
       </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project, index) => (
+        {projectList.map((project, index) => (
           <motion.div
-            key={index}
+            key={`${sectionIndex}-${index}`}
             className="p-6 rounded-xl border border-zinc-800 shadow-lg transform transition duration-300 h-full"
             whileHover={{
               y: -10,
@@ -237,7 +280,7 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
                 "0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
               borderColor: "rgba(139, 92, 246, 0.3)",
             }}
-            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseEnter={() => setHoveredIndex(sectionIndex * 100 + index)}
             onMouseLeave={() => setHoveredIndex(null)}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -296,6 +339,13 @@ const WebDevelopmentProjects: React.FC<WebDevelopmentProjectsProps> = ({
         ))}
       </div>
     </motion.div>
+  );
+
+  return (
+    <>
+      {renderProjectSection("Featured Projects", personalProjects, 2)}
+      {renderProjectSection("Paid/Internship Projects", internshipProjects, 1)}
+    </>
   );
 };
 

@@ -104,6 +104,9 @@ function AboutCertifications() {
             </motion.div>
           ))}
         </motion.div>
+        <div className="mt-2 flex justify-end">
+          <p className="text-sm text-gray-400 italic">. . . and many more</p>
+        </div>
       </div>
     </section>
   );
